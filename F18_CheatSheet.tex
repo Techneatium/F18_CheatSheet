@@ -25,7 +25,7 @@
 %-----------------------------------------------------------------
 % BEGIN DOCUMENT
 %-----------------------------------------------------------------
-\documentclass[fontHelvetica, widesubsec]{TechCheck}
+\documentclass[fontInter, widesubsec]{TechCheck}
 \title{F18_Cheatsheet}
 \author{Techneatium}
 
@@ -67,439 +67,413 @@
 
 	\section{START-UP}
 	\subsection{PRE-START}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{Ejection Seat test} & \textbf{DOWN \& ARMED} \\
-			\midrule
-			2. & \blue{Harness Lever} & \textbf{FWD} \\
-			\midrule
-			3. & \blue{Parking Brake} & \textbf{ENGAGED} \\
-			\midrule
-			4. & \blue{Master Arm} & \textbf{SAFE} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{Ejection Seat test} & \textbf{DOWN \& ARMED} \\
+		\midrule
+		2. & \blue{Harness Lever} & \textbf{FWD} \\
+		\midrule
+		3. & \blue{Parking Brake} & \textbf{ENGAGED} \\
+		\midrule
+		4. & \blue{Master Arm} & \textbf{SAFE} \\
+	\end{listlongtable}
 
 	\subsection{ENGINE START}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{Battery} & \textbf{ON} \\
-			\midrule
-			2. & \blue{Hyd. Brake} & > 3000psi \\
-			\midrule
-			3. & \blue{Fire Test} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{FIRE TEST} \dotfill \textbf{TEST A}
-					\item \textbf{BATT} \dotfill cycle \textbf{OFF} then \textbf{ON}
-					\item \textbf{FIRE TEST} \dotfill \textbf{TEST B}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			4. & \blue{APU Start} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{APU Caution Light} \dotfill verify OFF
-					\item \textbf{APU Switch} \dotfill \textbf{ON} \\
-					\item \textbf{READY Light} \dotfill illuminated (30s)
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			5. & \blue{Right Engine Start} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{ENG CRANK} \dotfill \textbf{R}
-					\item \textbf{R Eng RPM} \dotfill 15-25\%
-					\item \textbf{R Throttle} \dotfill \textbf{IDLE}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			6. & \blue{Stabilized Parameters} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
+	\begin{listlongtable}
+		1. & \blue{Battery} & \textbf{ON} \\
+		\midrule
+		2. & \blue{Hyd. Brake} & > 3000psi \\
+		\midrule
+		3. & \blue{Fire Test} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{FIRE TEST} \dotfill \textbf{TEST A}
+				\item \textbf{BATT} \dotfill cycle \textbf{OFF} then \textbf{ON}
+				\item \textbf{FIRE TEST} \dotfill \textbf{TEST B}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		4. & \blue{APU Start} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{APU Caution Light} \dotfill verify OFF
+				\item \textbf{APU Switch} \dotfill \textbf{ON} \\
+				\item \textbf{READY Light} \dotfill illuminated (30s)
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		5. & \blue{Right Engine Start} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{ENG CRANK} \dotfill \textbf{R}
+				\item \textbf{R Eng RPM} \dotfill 15-25\%
+				\item \textbf{R Throttle} \dotfill \textbf{IDLE}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		6. & \blue{Stabilized Parameters} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{IFEI} \dotfill Check
 				\begin{itemize}
-					\item \textbf{IFEI} \dotfill Check
-					\begin{itemize}
-						\item \textbf{RPM} -- 60-65\%
-						\item \textbf{EGT} -- < 750C until stable
-					\end{itemize}
-					\item \textbf{Cautions} \dotfill none for \textbf{ENG 2}
-					\item \textbf{GPWS Voice Alerts} \dotfill Check
+					\item \textbf{RPM} -- 60-65\%
+					\item \textbf{EGT} -- < 750C until stable
 				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			7. & \blue{Master Caution} & \textbf{RESET} \\
-			\midrule
-			8. & \blue{Displays} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{Left DDI} \dotfill \textbf{ON}
-					\item \textbf{Right DDI} \dotfill \textbf{ON}
-					\item \textbf{AMPCD} \dotfill \textbf{ON}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			9. & \blue{UFC} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{HUD} \dotfill \textbf{ON}
-					\item \textbf{ALT Switch} \dotfill \textbf{RDR}
-					\item \textbf{ATT Switch} \dotfill \textbf{AUTO}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			10. & \blue{BLEED AIR Knob} & Cycle thru \textbf{OFF} to \textbf{NORM} \break (shutoff valves closed during fire test) \\
-			\midrule
-			11. & \blue{Left Engine Start} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{ENG CRANK} \dotfill \textbf{L}
-					\item \textbf{L Eng RPM} \dotfill 15-25\%
-					\item \textbf{L Throttle} \dotfill \textbf{IDLE}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			12. & \blue{Stabilized Parameters} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
+				\item \textbf{Cautions} \dotfill none for \textbf{ENG 2}
+				\item \textbf{GPWS Voice Alerts} \dotfill Check
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		7. & \blue{Master Caution} & \textbf{RESET} \\
+		\midrule
+		8. & \blue{Displays} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{Left DDI} \dotfill \textbf{ON}
+				\item \textbf{Right DDI} \dotfill \textbf{ON}
+				\item \textbf{AMPCD} \dotfill \textbf{ON}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		9. & \blue{UFC} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{HUD} \dotfill \textbf{ON}
+				\item \textbf{ALT Switch} \dotfill \textbf{RDR}
+				\item \textbf{ATT Switch} \dotfill \textbf{AUTO}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		10. & \blue{BLEED AIR Knob} & Cycle thru \textbf{OFF} to \textbf{NORM} \break (shutoff valves closed during fire test) \\
+		\midrule
+		11. & \blue{Left Engine Start} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{ENG CRANK} \dotfill \textbf{L}
+				\item \textbf{L Eng RPM} \dotfill 15-25\%
+				\item \textbf{L Throttle} \dotfill \textbf{IDLE}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		12. & \blue{Stabilized Parameters} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{IFEI} \dotfill Check
 				\begin{itemize}
-					\item \textbf{IFEI} \dotfill Check
-					\begin{itemize}
-						\item \textbf{RPM} -- 60-65\%
-						\item \textbf{EGT} -- < 750C until stable
-					\end{itemize}
-					\item \textbf{Cautions} \dotfill none for \textbf{ENG 1}
-					\item \textbf{L GEN Caution} \dotfill Extinguished
+					\item \textbf{RPM} -- 60-65\%
+					\item \textbf{EGT} -- < 750C until stable
 				\end{itemize}
-			\end{minipage} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+				\item \textbf{Cautions} \dotfill none for \textbf{ENG 1}
+				\item \textbf{L GEN Caution} \dotfill Extinguished
+			\end{itemize}
+		\end{minipage} \\
+	\end{listlongtable}
 
 	\subsection{POST-START}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{Canopy} & \textbf{CLOSED} \\
-			\midrule
-			2. & \blue{Start INS Align} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{INS Selector} \dotfill \textbf{GND} or \textbf{CV} (as required)
-					\item \textbf{HSI} \dotfill select \textbf{STD HDG} (if available) \\ \hfill \emph{(significantly reduces align time to approx. 90s)}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			3. & \blue{RADAR} & \textbf{OPR} \\
-			\midrule
-			4. & \blue{FCS Reset} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{WING FOLD} \dotfill \textbf{SPREAD} \\
-					\hfill \textbf{ONLY IF ON GROUND}
-					\item \textbf{Left DDI} \dotfill \textbf{FCS} page
-					\item \textbf{MASTER CAUTION} \dotfill \textbf{PRESS} twice \\ \hfill (restacks cautions)
-					\item \textbf{FCS RESET} \dotfill \textbf{PRESS}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			5. & \blue{Lights Test} & \textbf{Check} \\
-			\midrule
-			6. & \blue{Hook Bypass} & \textbf{As Required} \\
-			\midrule
-			7. & \blue{Flaps} & \textbf{HALF} \\
-			\midrule
-			8. & \blue{FCS BIT} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{BIT Failures} \dotfill press FCS-MC
-					\item \textbf{MC1 \& MC2} \dotfill GO
-					\item \textbf{FCSA \& FCSB} \dotfill PBIT GO
-					\item \textbf{FCS BIT Switch} \dotfill press \& hold
-					\item \textbf{FCS-MC} \dotfill press FCS OSB
-					\item \textbf{FCSA \& FCSB} \dotfill GO
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			9. & \blue{ANTI SKID} & \textbf{OFF} if CV, else \textbf{ON} \\
-			\midrule
-			10. & \blue{Trim} & \textbf{PRESS T/O Trim} \\
-			\midrule
-			11. & \blue{PITOT} & \textbf{AUTO} \\
-			\midrule
-			12. & \blue{Displays} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{Left DDI} \dotfill \textbf{HUD Repeater}
-					\item \textbf{Right DDI} \dotfill \textbf{FCS Page}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			13. & \blue{RADALT Warning} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{GND}\dotfill 200 ft
-					\item \textbf{CV}\dotfill 80 ft
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			14. & \blue{Standby Attitude Indicator} & \textbf{UNCAGED} \\
-			\midrule
-			15. & \blue{Bingo Fuel} & \textbf{As desired} (8000lbs) \\
-			\midrule
-			16. & \blue{Altimeter} & \textbf{Set} \\
-			\midrule
-			17. & \blue{Mission Data} & \textbf{ENTER} \\
-			\midrule
-			18. & \blue{Weapons/Sensors} & \textbf{As Required} \\
-			\midrule
-			19. & \blue{STORES Page} & \textbf{Verify proper inventory installed} \\
-			\midrule
-			20. & \blue{HMD Alignment} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{SUPT/HMD/ALIGN Page} \dotfill \textbf{SELECT}
-					\item Superimpose \textbf{HMD} alignment cross on \textbf{HUD/BRU} alignment cross
-					\item \textbf{CAGE/UNCAGE} \dotfill \textbf{PRESS \& HOLD} \\
-					\hfill until \textbf{ALIGN OK}
-				\end{enumerate}
-				\textbf{Fine Align}
-				\begin{enumerate}
-					\item With \textbf{FA DXDY} displayed, use \textbf{TDC} to align azimuth and elevation \textbf{HMD} alignment crosses with \textbf{HUD/BRU} alignment cross
-					\item \textbf{CAGE/UNCAGE} \dotfill \textbf{PRESS \& RELEASE}
-					\item With \textbf{FA DROLL} displayed, use \textbf{TDC} to align roll axis \textbf{HMD} alignment crosses with \textbf{HUD/BRU} alignment cross
-					\item \textbf{CAGE/UNCAGE} \dotfill \textbf{PRESS \& RELEASE}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			21. & \blue{OBOGS} & \textbf{ON} \\
-			\midrule
-			22. & \blue{Complete INS Align} & \textbf{INS Selector} to \textbf{NAV} or \textbf{IFA} (if available) \\
-			\midrule
-			23. & \blue{Defensive Systems} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{ALR-67 RWR} \dotfill \textbf{ON}
-					\item \textbf{ECM Selector} \dotfill \textbf{STBY}
-					\item \textbf{Dispenser} \dotfill \textbf{ON} (middle)
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			24. & \blue{Lights} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{Strobe} \dotfill \textbf{ON}
-					\item \textbf{POS Lights} \dotfill \textbf{BRT}
-					\item \textbf{LDG/TAXI Lights} \dotfill \textbf{ON}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			25. & \blue{Network} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{IFF} \dotfill \textbf{ON}
-					\item \textbf{D/L} \dotfill \textbf{ON}, set desired frequency
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			26. & \blue{Parking Brake} & \textbf{DISENGAGE} \\
-			\midrule
-			27. & \blue{Chocks} & \textbf{REMOVED} \\
-			\midrule
-			28. & \blue{Audio} & \textbf{Volume as required} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{Canopy} & \textbf{CLOSED} \\
+		\midrule
+		2. & \blue{Start INS Align} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{INS Selector} \dotfill \textbf{GND} or \textbf{CV} (as required)
+				\item \textbf{HSI} \dotfill select \textbf{STD HDG} (if available) \\ \hfill \emph{(significantly reduces align time to approx. 90s)}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		3. & \blue{RADAR} & \textbf{OPR} \\
+		\midrule
+		4. & \blue{FCS Reset} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{WING FOLD} \dotfill \textbf{SPREAD} \\
+				\hfill \textbf{ONLY IF ON GROUND}
+				\item \textbf{Left DDI} \dotfill \textbf{FCS} page
+				\item \textbf{MASTER CAUTION} \dotfill \textbf{PRESS} twice \\ \hfill (restacks cautions)
+				\item \textbf{FCS RESET} \dotfill \textbf{PRESS}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		5. & \blue{Lights Test} & \textbf{Check} \\
+		\midrule
+		6. & \blue{Hook Bypass} & \textbf{As Required} \\
+		\midrule
+		7. & \blue{Flaps} & \textbf{HALF} \\
+		\midrule
+		8. & \blue{FCS BIT} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{BIT Failures} \dotfill press FCS-MC
+				\item \textbf{MC1 \& MC2} \dotfill GO
+				\item \textbf{FCSA \& FCSB} \dotfill PBIT GO
+				\item \textbf{FCS BIT Switch} \dotfill press \& hold
+				\item \textbf{FCS-MC} \dotfill press FCS OSB
+				\item \textbf{FCSA \& FCSB} \dotfill GO
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		9. & \blue{ANTI SKID} & \textbf{OFF} if CV, else \textbf{ON} \\
+		\midrule
+		10. & \blue{Trim} & \textbf{PRESS T/O Trim} \\
+		\midrule
+		11. & \blue{PITOT} & \textbf{AUTO} \\
+		\midrule
+		12. & \blue{Displays} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{Left DDI} \dotfill \textbf{HUD Repeater}
+				\item \textbf{Right DDI} \dotfill \textbf{FCS Page}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		13. & \blue{RADALT Warning} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{GND}\dotfill 200 ft
+				\item \textbf{CV}\dotfill 80 ft
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		14. & \blue{Standby Attitude Indicator} & \textbf{UNCAGED} \\
+		\midrule
+		15. & \blue{Bingo Fuel} & \textbf{As desired} (8000lbs) \\
+		\midrule
+		16. & \blue{Altimeter} & \textbf{Set} \\
+		\midrule
+		17. & \blue{Mission Data} & \textbf{ENTER} \\
+		\midrule
+		18. & \blue{Weapons/Sensors} & \textbf{As Required} \\
+		\midrule
+		19. & \blue{STORES Page} & \textbf{Verify proper inventory installed} \\
+		\midrule
+		20. & \blue{HMD Alignment} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{SUPT/HMD/ALIGN Page} \dotfill \textbf{SELECT}
+				\item Superimpose \textbf{HMD} alignment cross on \textbf{HUD/BRU} alignment cross
+				\item \textbf{CAGE/UNCAGE} \dotfill \textbf{PRESS \& HOLD} \\
+				\hfill until \textbf{ALIGN OK}
+			\end{enumerate}
+			\textbf{Fine Align}
+			\begin{enumerate}
+				\item With \textbf{FA DXDY} displayed, use \textbf{TDC} to align azimuth and elevation \textbf{HMD} alignment crosses with \textbf{HUD/BRU} alignment cross
+				\item \textbf{CAGE/UNCAGE} \dotfill \textbf{PRESS \& RELEASE}
+				\item With \textbf{FA DROLL} displayed, use \textbf{TDC} to align roll axis \textbf{HMD} alignment crosses with \textbf{HUD/BRU} alignment cross
+				\item \textbf{CAGE/UNCAGE} \dotfill \textbf{PRESS \& RELEASE}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		21. & \blue{OBOGS} & \textbf{ON} \\
+		\midrule
+		22. & \blue{Complete INS Align} & \textbf{INS Selector} to \textbf{NAV} or \textbf{IFA} (if available) \\
+		\midrule
+		23. & \blue{Defensive Systems} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{ALR-67 RWR} \dotfill \textbf{ON}
+				\item \textbf{ECM Selector} \dotfill \textbf{STBY}
+				\item \textbf{Dispenser} \dotfill \textbf{ON} (middle)
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		24. & \blue{Lights} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{Strobe} \dotfill \textbf{ON}
+				\item \textbf{POS Lights} \dotfill \textbf{BRT}
+				\item \textbf{LDG/TAXI Lights} \dotfill \textbf{ON}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		25. & \blue{Network} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{IFF} \dotfill \textbf{ON}
+				\item \textbf{D/L} \dotfill \textbf{ON}, set desired frequency
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		26. & \blue{Parking Brake} & \textbf{DISENGAGE} \\
+		\midrule
+		27. & \blue{Chocks} & \textbf{REMOVED} \\
+		\midrule
+		28. & \blue{Audio} & \textbf{Volume as required} \\
+	\end{listlongtable}
 	\clearpage
 
 	\section{TAKEOFF \& LANDING}
 
 	\subsection{PRE-TAXI}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{ANTI SKID} & As required
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item Field -- \textbf{ON}
-					\item Carrier -- \textbf{OFF}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			2. & \blue{FLAPS} & \textbf{HALF} \\
-			\midrule
-			2. & \blue{CHOCKS} & \textbf{REMOVED} \\
-			\midrule
-			2. & \blue{LAUNCH BAR} & \textbf{RETRACTED} \\
-			\midrule
-			2. & \blue{HOOK BYPASS} & As required \\
-			\midrule
-			2. & \blue{PARKING BRAKE} & \textbf{DISENGAGED} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{ANTI SKID} & As required
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item Field -- \textbf{ON}
+				\item Carrier -- \textbf{OFF}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		2. & \blue{FLAPS} & \textbf{HALF} \\
+		\midrule
+		2. & \blue{CHOCKS} & \textbf{REMOVED} \\
+		\midrule
+		2. & \blue{LAUNCH BAR} & \textbf{RETRACTED} \\
+		\midrule
+		2. & \blue{HOOK BYPASS} & As required \\
+		\midrule
+		2. & \blue{PARKING BRAKE} & \textbf{DISENGAGED} \\
+	\end{listlongtable}
 
 	\subsection{TAKEOFF - SHORE}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\multicolumn{3}{c}{\textbf{After Lining Up On Runway}} \\
-			\midrule
-			2. & \blue{ANTI SKID SPOILER BK} & \textbf{BOTH (UP)} \\
-			\midrule
-			3. & \blue{FLAPS} & \textbf{UP} \\
-			\midrule
-			4. & \blue{TRIM} & \textbf{T/O} \\
-			\midrule
-			5. & \blue{NWS} & \textbf{LOW GAIN} \\
-			\midrule
-			6. & \blue{Takeoff} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{BRAKES} \dotfill hold
-					\item \textbf{THROTTLE} \dotfill \textbf{MIL}
-					\item \textbf{BRAKES} \dotfill release
-					\item \textbf{THROTTLE} \dotfill \textbf{MAX} \emph{if desired}
-					\item \textbf{Rotation} \dotfill approx 150 KIAS \\
-					\hfill \emph{hold 7 deg AOA}
-					\item \textbf{GEAR} \dotfill \textbf{UP} < 240 KIAS
-					\item \textbf{FLAPS} \dotfill \textbf{AUTO} once airborn
-					\item \textbf{ALT} \dotfill \textbf{BARO} at 3000 agl
-				\end{enumerate}
-			\end{minipage} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\multicolumn{3}{c}{\textbf{After Lining Up On Runway}} \\
+		\midrule
+		2. & \blue{ANTI SKID SPOILER BK} & \textbf{BOTH (UP)} \\
+		\midrule
+		3. & \blue{FLAPS} & \textbf{UP} \\
+		\midrule
+		4. & \blue{TRIM} & \textbf{T/O} \\
+		\midrule
+		5. & \blue{NWS} & \textbf{LOW GAIN} \\
+		\midrule
+		6. & \blue{Takeoff} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{BRAKES} \dotfill hold
+				\item \textbf{THROTTLE} \dotfill \textbf{MIL}
+				\item \textbf{BRAKES} \dotfill release
+				\item \textbf{THROTTLE} \dotfill \textbf{MAX} \emph{if desired}
+				\item \textbf{Rotation} \dotfill approx 150 KIAS \\
+				\hfill \emph{hold 7 deg AOA}
+				\item \textbf{GEAR} \dotfill \textbf{UP} < 240 KIAS
+				\item \textbf{FLAPS} \dotfill \textbf{AUTO} once airborn
+				\item \textbf{ALT} \dotfill \textbf{BARO} at 3000 agl
+			\end{enumerate}
+		\end{minipage} \\
+	\end{listlongtable}
 
 	\clearpage
 
 	\subsection{TAKEOFF - CARRIER}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			& \blue{Lineup} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item Wait behind JBD until Catapult is clear
-					\item Follow Taxi Directors Instructions to line up on Catapult
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			1. & \blue{WING FOLD} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{WING FOLD} \dotfill \textbf{SPREAD} when directed \\
-					\hfill wait until fully spread
-					\item \textbf{WING FOLD} \dotfill \textbf{LOCK}
-					\item \textbf{HUD Repeater} \dotfill no \textbf{WING UNLK} caution
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			2. & \blue{FLAPS} & \textbf{HALF} \\
-			\midrule
-			3. & \blue{Launch Bar Preparation} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{LAUNCH BAR} \dotfill \textbf{EXTEND} when directed
-					\item \textbf{Throttle} \dotfill \textbf{UP} when directed
-					\item \textbf{Taxi} \dotfill launch bar into shuttle
-					\item \textbf{Throttle} \dotfill \textbf{IDLE} when directed
-					\item \textbf{Wait} for holdback installation \& checks
-					\item \textbf{LAUNCH BAR} \dotfill \textbf{RETRACT}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			4. & \blue{Trim} & 2-3 deg nose up \\
-			\bottomrule
-		\end{longtable}
-
-		\notebox{
+	\begin{listlongtable}
+		& \blue{Lineup} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
 			\begin{itemize}
-				\item Refer to \textbf{CHKLST} page for weight
+				\item Wait behind JBD until Catapult is clear
+				\item Follow Taxi Directors Instructions to line up on Catapult
 			\end{itemize}
-			\begin{center}
-				% \begin{tabular}{p{2.5cm} | p{1.5cm}}
-				% 	\toprule
-				% 	\textbf{Weight [lbs]} & \textbf{Trim} \\
-				% 	\midrule
-				% 	$<$ 44000 & 16 deg \\
-				% 	44000-48000 & 17 deg \\
-				% 	$>$ 48000 & 18 deg \\
-				% 	\midrule
-				% 	\multicolumn{2}{c}{\textbf{MAX WEIGHT: 51900 lbs}} \\
-				% 	\bottomrule
-				% \end{tabular}
-				\begin{tabular}{l | l | l | l}
-					\toprule
-					\textbf{Weight [lbs]} & $<$ 44000 & 44000-48000 & $>$ 48000 \\
-					\midrule
-					\textbf{Trim [deg]} & 16 & 17 & 18 \\
-					\midrule
-					\multicolumn{4}{l}{\textbf{MAX WEIGHT: 51900 lbs}} \\
-					\bottomrule
-				\end{tabular}
-			\end{center}
-		}
+		\end{minipage} \\
+		\midrule
+		1. & \blue{WING FOLD} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{WING FOLD} \dotfill \textbf{SPREAD} when directed \\
+				\hfill wait until fully spread
+				\item \textbf{WING FOLD} \dotfill \textbf{LOCK}
+				\item \textbf{HUD Repeater} \dotfill no \textbf{WING UNLK} caution
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		2. & \blue{FLAPS} & \textbf{HALF} \\
+		\midrule
+		3. & \blue{Launch Bar Preparation} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{LAUNCH BAR} \dotfill \textbf{EXTEND} when directed
+				\item \textbf{Throttle} \dotfill \textbf{UP} when directed
+				\item \textbf{Taxi} \dotfill launch bar into shuttle
+				\item \textbf{Throttle} \dotfill \textbf{IDLE} when directed
+				\item \textbf{Wait} for holdback installation \& checks
+				\item \textbf{LAUNCH BAR} \dotfill \textbf{RETRACT}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		4. & \blue{Trim} & 2-3 deg nose up \\
+	\end{listlongtable}
 
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			5. & \blue{Speed Brakes} & \textbf{IN} \\
-			\midrule
-			6. & \blue{Final Checks} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{Throttle} \dotfill \textbf{MIL} when directed
-					\item \textbf{Control Wipeout}
-					\begin{itemize}
-						\item Stick Full Forward
-						\item Stick Full Aft
-						\item Stick Full Left
-						\item Stick Full Right
-						\item Rudder Full Left
-						\item Rudder Full Right
-					\end{itemize}
-					\item \textbf{Eng. Inst.} \dotfill \textbf{Checked}
-					\item \textbf{Caution/Warnings}  \dotfill\textbf{None}
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			7. & \blue{Catapult Shot} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{enumerate}
-					\item \textbf{Salute} \dotfill \textbf{CAT SHOT}
-					\item \textbf{Gear} \dotfill \textbf{UP} < 240 KIAS
-					\item \textbf{Flaps} \dotfill \textbf{AUTO}
-					\item \textbf{ALT} \dotfill \textbf{BARO} at 3000 agl
-				\end{enumerate}
-			\end{minipage} \\
-			\midrule
-			8. & \blue{Clearing Turn} & \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\notebox{
+		\begin{itemize}
+			\item Refer to \textbf{CHKLST} page for weight
+		\end{itemize}
+		\begin{center}
+			% \begin{tabular}{p{2.5cm} | p{1.5cm}}
+			% 	\toprule
+			% 	\textbf{Weight [lbs]} & \textbf{Trim} \\
+			% 	\midrule
+			% 	$<$ 44000 & 16 deg \\
+			% 	44000-48000 & 17 deg \\
+			% 	$>$ 48000 & 18 deg \\
+			% 	\midrule
+			% 	\multicolumn{2}{c}{\textbf{MAX WEIGHT: 51900 lbs}} \\
+			% 	\bottomrule
+			% \end{tabular}
+			\begin{tabular}{l | l | l | l}
+				\toprule
+				\textbf{Weight [lbs]} & $<$ 44000 & 44000-48000 & $>$ 48000 \\
+				\midrule
+				\textbf{Trim [deg]} & 16 & 17 & 18 \\
+				\midrule
+				\multicolumn{4}{l}{\textbf{MAX WEIGHT: 51900 lbs}} \\
+				\bottomrule
+			\end{tabular}
+		\end{center}
+	}
+
+	\begin{listlongtable}
+		5. & \blue{Speed Brakes} & \textbf{IN} \\
+		\midrule
+		6. & \blue{Final Checks} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{Throttle} \dotfill \textbf{MIL} when directed
+				\item \textbf{Control Wipeout}
+				\begin{itemize}
+					\item Stick Full Forward
+					\item Stick Full Aft
+					\item Stick Full Left
+					\item Stick Full Right
+					\item Rudder Full Left
+					\item Rudder Full Right
+				\end{itemize}
+				\item \textbf{Eng. Inst.} \dotfill \textbf{Checked}
+				\item \textbf{Caution/Warnings}  \dotfill\textbf{None}
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		7. & \blue{Catapult Shot} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{enumerate}
+				\item \textbf{Salute} \dotfill \textbf{CAT SHOT}
+				\item \textbf{Gear} \dotfill \textbf{UP} < 240 KIAS
+				\item \textbf{Flaps} \dotfill \textbf{AUTO}
+				\item \textbf{ALT} \dotfill \textbf{BARO} at 3000 agl
+			\end{enumerate}
+		\end{minipage} \\
+		\midrule
+		8. & \blue{Clearing Turn} & \\
+	\end{listlongtable}
 
 	\clearpage
 
@@ -516,91 +490,87 @@
 
 	\clearpage
 
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{Initial Approach} \thumbnar &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{HOOK} \dotfill \textbf{UP}
-					\item \textbf{ANTI-SKID} \dotfill \textbf{ON}
-					\item \textbf{ALT} \dotfill \textbf{RDR}\
-					\item \textbf{Airspeed} \dotfill \textbf{300-350 KIAS}
-					\item \textbf{Altitude} \dotfill \textbf{800 ft}
-					\item \textbf{ARM} \dotfill \textbf{OFF}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			2. & \blue{Initial Break} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Break Interval} \dotfill \textbf{15-17 s}
-					\item \textbf{SPEED BRAKE} \dotfill \textbf{EXTEND}
-					\item \textbf{Throttle} \dotfill \textbf{IDLE}
-					\item \textbf{G} \dotfill 1\% of Airspeed
-					\item \textbf{Altitude} \dotfill \textbf{800 ft}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			3. & \blue{Break Turn} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Landing Gear} \dotfill \textbf{DOWN} at 250 KIAS
-					\item \textbf{FLAPS} \dotfill \textbf{FULL} at 250 KIAS
-					\item \textbf{SPEED BRAKE} \dotfill \textbf{RETRACT} at 250 KIAS
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			4. & \blue{Downwind} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Altitude} \dotfill descend to \textbf{600 ft}
-					\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
-					\item \textbf{LANDING CHECKLIST}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			5. & \blue{Final Turn} & \textbf{180 Deg Position}
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Abeam Pos.} \dotfill \textbf{1-1.2 nmi}
-				\end{itemize}
-			\end{minipage}
-			\textbf{90 Deg Position}
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
-					\item \textbf{Altitude} \dotfill \textbf{400-500 ft}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			6. & \blue{Intercept Glideslope} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Distance} \dotfill \textbf{3/4 Mile}
-					\item \textbf{Altitude} \dotfill \textbf{360 ft}
-					\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			7. & \blue{Touchdown} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item No more than 750 ft/min
-					\item \textbf{DO NOT FLARE}
-				\end{itemize}
-			\end{minipage} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{Initial Approach} \thumbnar &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{HOOK} \dotfill \textbf{UP}
+				\item \textbf{ANTI-SKID} \dotfill \textbf{ON}
+				\item \textbf{ALT} \dotfill \textbf{RDR}\
+				\item \textbf{Airspeed} \dotfill \textbf{300-350 KIAS}
+				\item \textbf{Altitude} \dotfill \textbf{800 ft}
+				\item \textbf{ARM} \dotfill \textbf{OFF}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		2. & \blue{Initial Break} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Break Interval} \dotfill \textbf{15-17 s}
+				\item \textbf{SPEED BRAKE} \dotfill \textbf{EXTEND}
+				\item \textbf{Throttle} \dotfill \textbf{IDLE}
+				\item \textbf{G} \dotfill 1\% of Airspeed
+				\item \textbf{Altitude} \dotfill \textbf{800 ft}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		3. & \blue{Break Turn} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Landing Gear} \dotfill \textbf{DOWN} at 250 KIAS
+				\item \textbf{FLAPS} \dotfill \textbf{FULL} at 250 KIAS
+				\item \textbf{SPEED BRAKE} \dotfill \textbf{RETRACT} at 250 KIAS
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		4. & \blue{Downwind} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Altitude} \dotfill descend to \textbf{600 ft}
+				\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
+				\item \textbf{LANDING CHECKLIST}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		5. & \blue{Final Turn} & \textbf{180 Deg Position}
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Abeam Pos.} \dotfill \textbf{1-1.2 nmi}
+			\end{itemize}
+		\end{minipage}
+		\textbf{90 Deg Position}
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
+				\item \textbf{Altitude} \dotfill \textbf{400-500 ft}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		6. & \blue{Intercept Glideslope} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Distance} \dotfill \textbf{3/4 Mile}
+				\item \textbf{Altitude} \dotfill \textbf{360 ft}
+				\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		7. & \blue{Touchdown} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item No more than 750 ft/min
+				\item \textbf{DO NOT FLARE}
+			\end{itemize}
+		\end{minipage} \\
+	\end{listlongtable}
 
 	\subsection{LANDING - CARRIER CASE I}
 	\begin{center}
@@ -615,119 +585,115 @@
 
 	\clearpage
 
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{Navigation} \thumbnar &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
+	\begin{listlongtable}
+		1. & \blue{Navigation} \thumbnar &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{TACAN} \dotfill \textbf{ON} and tuned
+				\item \textbf{HSI}
 				\begin{itemize}
-					\item \textbf{TACAN} \dotfill \textbf{ON} and tuned
-					\item \textbf{HSI}
-					\begin{itemize}
-						\item \textbf{TCN} -- \textbf{BOXED}
-						\item \textbf{CRS} -- \textbf{BRC}
-					\end{itemize}
+					\item \textbf{TCN} -- \textbf{BOXED}
+					\item \textbf{CRS} -- \textbf{BRC}
 				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			2. & \blue{Pattern Entry} \thumbnar &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Distance} -- approx \textbf{5 nm}
-					\item \textbf{Heading} -- \textbf{BRC}
-					\item \textbf{Line Up} -- \textbf{Right of CV}
-					\item \textbf{Airspeed} -- \textbf{300-350 KIAS}
-					\item \textbf{Altitude} -- \textbf{800 ft}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			3. & \blue{Pre-Break} \thumbnar &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{HOOK} \dotfill \textbf{DOWN}
-					\item \textbf{ALT} \dotfill \textbf{RDR}\
-					\item \textbf{RADALT} \dotfill 370 ft
-					\item \textbf{ANTI-SKID} \dotfill \textbf{OFF}
-					\item \textbf{HOOK BYPASS} \dotfill \textbf{CARRIER}
-					\item \textbf{ARM} \dotfill \textbf{OFF}
-					\item \textbf{HSI Zoom} \dotfill 10 nm
-					\item \textbf{Airspeed} \dotfill \textbf{300-350 KIAS}
-					\item \textbf{Altitude} \dotfill \textbf{800 ft}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			5. & \blue{Initial Break} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Break Interval} \dotfill \textbf{15-17 s}
-					\item \textbf{SPEED BRAKE} \dotfill \textbf{EXTEND}
-					\item \textbf{Throttle} \dotfill \textbf{IDLE}
-					\item \textbf{G} \dotfill 1\% of Airspeed
-					\item \textbf{Altitude} \dotfill \textbf{800 ft}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			6. & \blue{Break Turn} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Landing Gear} \dotfill \textbf{DOWN} at 250 KIAS
-					\item \textbf{FLAPS} \dotfill \textbf{FULL} at 250 KIAS
-					\item \textbf{SPEED BRAKE} \dotfill \textbf{RETRACT} at 250 KIAS
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			7. & \blue{Downwind} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Altitude} \dotfill descend to \textbf{600 ft}
-					\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
-					\item \textbf{LANDING CHECKLIST}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			8. & \blue{Final Turn} & \textbf{180 Deg Position}
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Abeam Pos.} \dotfill \textbf{1-1.2 nmi}
-				\end{itemize}
-			\end{minipage}
-			\textbf{90 Deg Position}
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
-					\item \textbf{Altitude} \dotfill \textbf{400-500 ft}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			9. & \blue{Intercept Glideslope} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item \textbf{Distance} \dotfill \textbf{3/4 Mile}
-					\item \textbf{Altitude} \dotfill \textbf{360 ft}
-					\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
-				\end{itemize}
-			\end{minipage} \\
-			\midrule
-			10. & \blue{Touchdown} &
-			\begin{minipage}[t]{\linewidth}
-				\vspace{-7pt}
-				\begin{itemize}
-					\item No more than 750 ft/min
-					\item \textbf{DO NOT FLARE}
-				\end{itemize}
-			\end{minipage} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		2. & \blue{Pattern Entry} \thumbnar &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Distance} -- approx \textbf{5 nm}
+				\item \textbf{Heading} -- \textbf{BRC}
+				\item \textbf{Line Up} -- \textbf{Right of CV}
+				\item \textbf{Airspeed} -- \textbf{300-350 KIAS}
+				\item \textbf{Altitude} -- \textbf{800 ft}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		3. & \blue{Pre-Break} \thumbnar &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{HOOK} \dotfill \textbf{DOWN}
+				\item \textbf{ALT} \dotfill \textbf{RDR}\
+				\item \textbf{RADALT} \dotfill 370 ft
+				\item \textbf{ANTI-SKID} \dotfill \textbf{OFF}
+				\item \textbf{HOOK BYPASS} \dotfill \textbf{CARRIER}
+				\item \textbf{ARM} \dotfill \textbf{OFF}
+				\item \textbf{HSI Zoom} \dotfill 10 nm
+				\item \textbf{Airspeed} \dotfill \textbf{300-350 KIAS}
+				\item \textbf{Altitude} \dotfill \textbf{800 ft}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		5. & \blue{Initial Break} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Break Interval} \dotfill \textbf{15-17 s}
+				\item \textbf{SPEED BRAKE} \dotfill \textbf{EXTEND}
+				\item \textbf{Throttle} \dotfill \textbf{IDLE}
+				\item \textbf{G} \dotfill 1\% of Airspeed
+				\item \textbf{Altitude} \dotfill \textbf{800 ft}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		6. & \blue{Break Turn} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Landing Gear} \dotfill \textbf{DOWN} at 250 KIAS
+				\item \textbf{FLAPS} \dotfill \textbf{FULL} at 250 KIAS
+				\item \textbf{SPEED BRAKE} \dotfill \textbf{RETRACT} at 250 KIAS
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		7. & \blue{Downwind} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Altitude} \dotfill descend to \textbf{600 ft}
+				\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
+				\item \textbf{LANDING CHECKLIST}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		8. & \blue{Final Turn} & \textbf{180 Deg Position}
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Abeam Pos.} \dotfill \textbf{1-1.2 nmi}
+			\end{itemize}
+		\end{minipage}
+		\textbf{90 Deg Position}
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
+				\item \textbf{Altitude} \dotfill \textbf{400-500 ft}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		9. & \blue{Intercept Glideslope} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item \textbf{Distance} \dotfill \textbf{3/4 Mile}
+				\item \textbf{Altitude} \dotfill \textbf{360 ft}
+				\item \textbf{AOA} \dotfill \textbf{ON-SPEED}
+			\end{itemize}
+		\end{minipage} \\
+		\midrule
+		10. & \blue{Touchdown} &
+		\begin{minipage}[t]{\linewidth}
+			\vspace{-7pt}
+			\begin{itemize}
+				\item No more than 750 ft/min
+				\item \textbf{DO NOT FLARE}
+			\end{itemize}
+		\end{minipage} \\
+	\end{listlongtable}
 
 	\notebox{
 		\begin{itemize}
@@ -778,291 +744,231 @@
 	\section{SYSTEMS}
 
 	\subsection{ARC-210 RADIO}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{ARC-210} & \textbf{\textbullet} \ Provides T/R of AM/FM in 30-399.975MHz \\
-			& & \textbf{\textbullet} \ Contains 2 radios: COMM1 \& COMM2 \\
-			& & \textbf{\textbullet} \ Controlled from UFC \\
-			\midrule
-			\textbf{\textbullet} & \blue{Power On} & Rotate Vol knobs of COMM1 \& COMM2 \\
-			\midrule
-			\textbf{\textbullet} & \blue{Preset Channels} & \textbf{\textbullet} \ M: Manual \\
-			& & \textbf{\textbullet} \ 1-20: Preset Channels \\
-			& & \textbf{\textbullet} \ G: Guard (243.000) \\
-			& & \textbf{\textbullet} \ C: Cue Channel for SINCGARS\\
-			& & \textbf{\textbullet} \ S: Maritime (Sea) \\
-			\midrule
-			\textbf{\textbullet} & \blue{OSB 1: GRCV} & Toggles Guard Receive \\
-			\midrule
-			\textbf{\textbullet} & \blue{OSB 2: SQCH} & Toggles Squelch \\
-			\midrule
-			\textbf{\textbullet} & \blue{OSB 3: CPHR} & Toggles Cipher modes (plain, cipher, delay) \\
-			& & (not implemented) \\
-			\midrule
-			\textbf{\textbullet} & \blue{OSB 4: AM / FM} & Selects Frequency Band \\
-			& & (only visible when in AM/FM overlap) \\
-			\midrule
-			\textbf{\textbullet} & \blue{OSB 5: MENU} & Menu Button \\
-			\midrule
-			\textbf{\textbullet} & \blue{Manually Set Freq} & 1. \ Set desired channel with channel knob \\
-			& & 2. \ Enter desired Frequency on UFC, ENT \\
-			& & 3. \ Confirm all options as desired \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{ARC-210} & \textbf{\textbullet} \ Provides T/R of AM/FM in 30-399.975MHz \\
+		& & \textbf{\textbullet} \ Contains 2 radios: COMM1 \& COMM2 \\
+		& & \textbf{\textbullet} \ Controlled from UFC \\
+		\midrule
+		\textbf{\textbullet} & \blue{Power On} & Rotate Vol knobs of COMM1 \& COMM2 \\
+		\midrule
+		\textbf{\textbullet} & \blue{Preset Channels} & \textbf{\textbullet} \ M: Manual \\
+		& & \textbf{\textbullet} \ 1-20: Preset Channels \\
+		& & \textbf{\textbullet} \ G: Guard (243.000) \\
+		& & \textbf{\textbullet} \ C: Cue Channel for SINCGARS\\
+		& & \textbf{\textbullet} \ S: Maritime (Sea) \\
+		\midrule
+		\textbf{\textbullet} & \blue{OSB 1: GRCV} & Toggles Guard Receive \\
+		\midrule
+		\textbf{\textbullet} & \blue{OSB 2: SQCH} & Toggles Squelch \\
+		\midrule
+		\textbf{\textbullet} & \blue{OSB 3: CPHR} & Toggles Cipher modes (plain, cipher, delay) \\
+		& & (not implemented) \\
+		\midrule
+		\textbf{\textbullet} & \blue{OSB 4: AM / FM} & Selects Frequency Band \\
+		& & (only visible when in AM/FM overlap) \\
+		\midrule
+		\textbf{\textbullet} & \blue{OSB 5: MENU} & Menu Button \\
+		\midrule
+		\textbf{\textbullet} & \blue{Manually Set Freq} & 1. \ Set desired channel with channel knob \\
+		& & 2. \ Enter desired Frequency on UFC, ENT \\
+		& & 3. \ Confirm all options as desired \\
+	\end{listlongtable}
 
 	\subsection{AFCS - MODES}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{ATTH} & \textbf{Attitude Hold:} Aircraft will maintain existing pitch attitude and +/- 70 deg roll attitude \\
-			\midrule
-			\textbf{\textbullet} & \blue{BALT} & \textbf{Barometric Altitude Hold:} Aircraft will maintain current heading and barometric altitude 0-70000 ft \\
-			\midrule
-			\textbf{\textbullet} & \blue{HSEL} & \textbf{Heading Select:} Aircraft will turn and maintain heading selected on HSD \\
-			\midrule
-			\textbf{\textbullet} & \blue{RALT} & \textbf{Radar Altitude Hold:} Aircraft will maintain current heading and radar altitude 0-5000 ft \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{ATTH} & \textbf{Attitude Hold:} Aircraft will maintain existing pitch attitude and +/- 70 deg roll attitude \\
+		\midrule
+		\textbf{\textbullet} & \blue{BALT} & \textbf{Barometric Altitude Hold:} Aircraft will maintain current heading and barometric altitude 0-70000 ft \\
+		\midrule
+		\textbf{\textbullet} & \blue{HSEL} & \textbf{Heading Select:} Aircraft will turn and maintain heading selected on HSD \\
+		\midrule
+		\textbf{\textbullet} & \blue{RALT} & \textbf{Radar Altitude Hold:} Aircraft will maintain current heading and radar altitude 0-5000 ft \\
+	\end{listlongtable}
 
 	\subsection{AFCS - PROCEDURES}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Stick: Centered \\
-			& & \textbf{\textbullet} \ HSD: heading selected (if required) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Press A/P OSB \\
-			& & 2. \ Select Submode OSB \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & press Paddle Switch \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Stick: Centered \\
+		& & \textbf{\textbullet} \ HSD: heading selected (if required) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Press A/P OSB \\
+		& & 2. \ Select Submode OSB \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & press Paddle Switch \\
+	\end{listlongtable}
 
 	\subsection{ATC - APPROACH MODE}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Flaps: HALF/FULL \\
-			& & \textbf{\textbullet} \ TE Flaps: >27 deg \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & ATC button \\
-			\midrule
-			\textbf{\textbullet} & \blue{Effect} & Computer modulates thrust to maintain on speed AOA, pilot controls flightpath with pitch command \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ ATC button \\
-			& & \textbf{\textbullet} \ Flaps: AUTO \\
-			& & \textbf{\textbullet} \ WOW \\
-			& & \textbf{\textbullet} \ Bank Angle > 70deg \\
-			& & \textbf{\textbullet} \ Sensor Failure \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Flaps: HALF/FULL \\
+		& & \textbf{\textbullet} \ TE Flaps: >27 deg \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & ATC button \\
+		\midrule
+		\textbf{\textbullet} & \blue{Effect} & Computer modulates thrust to maintain on speed AOA, pilot controls flightpath with pitch command \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ ATC button \\
+		& & \textbf{\textbullet} \ Flaps: AUTO \\
+		& & \textbf{\textbullet} \ WOW \\
+		& & \textbf{\textbullet} \ Bank Angle > 70deg \\
+		& & \textbf{\textbullet} \ Sensor Failure \\
+	\end{listlongtable}
 
 	\subsection{ATC - CRUISE MODE}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Flaps: AUTO \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & ATC button \\
-			\midrule
-			\textbf{\textbullet} & \blue{Effect} & Computer modulates thrust to maintain existing airspeed \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ ATC button \\
-			& & \textbf{\textbullet} \ Flaps: HALF/FULL \\
-			& & \textbf{\textbullet} \ Sensor Failure \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Flaps: AUTO \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & ATC button \\
+		\midrule
+		\textbf{\textbullet} & \blue{Effect} & Computer modulates thrust to maintain existing airspeed \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ ATC button \\
+		& & \textbf{\textbullet} \ Flaps: HALF/FULL \\
+		& & \textbf{\textbullet} \ Sensor Failure \\
+	\end{listlongtable}
 
 	\section{NAVIGATION}
 
 	\subsection{WAYPOINT}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Waypoints} & Pre-planned navigational points of reerence to follow on route to area of operation \\
-			& & Maximum: 60 \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activate WAYPOINT Nav} & Press WYPT OSB on HSI \\
-			\midrule
-			\textbf{\textbullet} & \blue{Select Sequence} & press SEQ\# OSB \\
-			\midrule
-			\textbf{\textbullet} & \blue{Display Lines} & box SEQ on HSI \\
-			\midrule
-			\textbf{\textbullet} & \blue{HSI Info (Top Right)} & Bearing (deg) / Distance (Nm) \\
-			& & Time-to-Go to Waypoint (min:sec) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Automatic Sequencing} & box AUTO on HSI \\
-			& & Waypoint will automatically advance \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Waypoints} & Pre-planned navigational points of reerence to follow on route to area of operation \\
+		& & Maximum: 60 \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activate WAYPOINT Nav} & Press WYPT OSB on HSI \\
+		\midrule
+		\textbf{\textbullet} & \blue{Select Sequence} & press SEQ\# OSB \\
+		\midrule
+		\textbf{\textbullet} & \blue{Display Lines} & box SEQ on HSI \\
+		\midrule
+		\textbf{\textbullet} & \blue{HSI Info (Top Right)} & Bearing (deg) / Distance (Nm) \\
+		& & Time-to-Go to Waypoint (min:sec) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Automatic Sequencing} & box AUTO on HSI \\
+		& & Waypoint will automatically advance \\
+	\end{listlongtable}
 
 	\subsection{WAYPOINT - ADD}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{DATA Page} & Press DATA OSB on HSI \\
-			& & verify correct sequence is selected \\
-			\midrule
-			2. & \blue{Activate UFC} & press SEQUFC OSB \\
-			\midrule
-			3. & \blue{Insert Waypoint} & a) \ press INS OSB on UFC \\
-			& & b) \ input desired number, ENT \\
-			\midrule
-			4. & \blue{Edit Coordinates} & As described in \textbf{Section \ref{sec:wyptlatlong} or \ref{sec:wyptgrid}} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{DATA Page} & Press DATA OSB on HSI \\
+		& & verify correct sequence is selected \\
+		\midrule
+		2. & \blue{Activate UFC} & press SEQUFC OSB \\
+		\midrule
+		3. & \blue{Insert Waypoint} & a) \ press INS OSB on UFC \\
+		& & b) \ input desired number, ENT \\
+		\midrule
+		4. & \blue{Edit Coordinates} & As described in \textbf{Section \ref{sec:wyptlatlong} or \ref{sec:wyptgrid}} \\
+	\end{listlongtable}
 
 	\subsection{WAYPOINT - REMOVE}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{DATA Page} & Press DATA OSB on HSI \\
-			& & verify correct sequence is selected \\
-			\midrule
-			2. & \blue{Activate UFC} & press SEQUFC OSB \\
-			\midrule
-			3. & \blue{Delete Waypoint} & a) \ press DEL OSB on UFC \\
-			& & b) \ input desired number, ENT \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{DATA Page} & Press DATA OSB on HSI \\
+		& & verify correct sequence is selected \\
+		\midrule
+		2. & \blue{Activate UFC} & press SEQUFC OSB \\
+		\midrule
+		3. & \blue{Delete Waypoint} & a) \ press DEL OSB on UFC \\
+		& & b) \ input desired number, ENT \\
+	\end{listlongtable}
 
 	\subsection{WAYPOINT - EDIT LAT/LONG}
 	\label{sec:wyptlatlong}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{DATA Page} & Press DATA OSB on HSI \\
-			\midrule
-			2. & \blue{Select Waypoint} & using Increment/Decrement OSBs \\
-			\midrule
-			3. & \blue{Activate UFC} & a) \ press UFC OSB \\
-			& & b) \ press POSN OSB \\
-			\midrule
-			4. & \blue{Edit Coordinates} & a) \ Input Latitude, ENT \\
-			& & b) \ Input Longitude, ENT \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{DATA Page} & Press DATA OSB on HSI \\
+		\midrule
+		2. & \blue{Select Waypoint} & using Increment/Decrement OSBs \\
+		\midrule
+		3. & \blue{Activate UFC} & a) \ press UFC OSB \\
+		& & b) \ press POSN OSB \\
+		\midrule
+		4. & \blue{Edit Coordinates} & a) \ Input Latitude, ENT \\
+		& & b) \ Input Longitude, ENT \\
+	\end{listlongtable}
 
 	\subsection{WAYPOINT - EDIT GRID COORDS}
 	\label{sec:wyptgrid}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{DATA Page} & Press DATA OSB on HSI \\
-			\midrule
-			2. & \blue{Select Waypoint} & using Increment/Decrement OSBs \\
-			\midrule
-			3. & \blue{Activate UFC} & a) \ press UFC OSB \\
-			& & b) \ press GRID OSB \\
-			& & c) \ HSI now displays Grid Menu \\
-			\midrule
-			4. & \blue{Edit Coordinates} & a) \ Verify TDC slaved to HSI \\
-			& & b) \ Press \& Hold TDC DEPRESS to slew \\
-			& & c) \ Release TDC when over desired square \\
-			& & d) \ Input remaining coords on UFC \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{DATA Page} & Press DATA OSB on HSI \\
+		\midrule
+		2. & \blue{Select Waypoint} & using Increment/Decrement OSBs \\
+		\midrule
+		3. & \blue{Activate UFC} & a) \ press UFC OSB \\
+		& & b) \ press GRID OSB \\
+		& & c) \ HSI now displays Grid Menu \\
+		\midrule
+		4. & \blue{Edit Coordinates} & a) \ Verify TDC slaved to HSI \\
+		& & b) \ Press \& Hold TDC DEPRESS to slew \\
+		& & c) \ Release TDC when over desired square \\
+		& & d) \ Input remaining coords on UFC \\
+	\end{listlongtable}
 
 	\subsection{WAYPOINT - PRECISE COORDS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Normal Coordinates} & \textbf{\textbullet} \ LAT/LONG: deg/min/sec \\
-			& & \textbf{\textbullet} \ GRID: 6 digits \\
-			\midrule
-			\textbf{\textbullet} & \blue{Precise Coordinates} & \textbf{\textbullet} \ LAT/LONG: deg/min/sec.xx \\
-			& & \textbf{\textbullet} \ GRID: 10 digits \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & a) \ press DATA OSB on HSI \\
-			& & b) \ box PRECISE \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Normal Coordinates} & \textbf{\textbullet} \ LAT/LONG: deg/min/sec \\
+		& & \textbf{\textbullet} \ GRID: 6 digits \\
+		\midrule
+		\textbf{\textbullet} & \blue{Precise Coordinates} & \textbf{\textbullet} \ LAT/LONG: deg/min/sec.xx \\
+		& & \textbf{\textbullet} \ GRID: 10 digits \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & a) \ press DATA OSB on HSI \\
+		& & b) \ box PRECISE \\
+	\end{listlongtable}
 
 	\subsection{MARKPOINT}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Markpoint} & Used to mark a point of interest \\
-			& & Maximum: 9 \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activate Navigation} & \textbf{\textbullet} \ WYPT boxed on HSI \\
-			& & \textbf{\textbullet} \ M\# selected with Increment/Decrement OSBs \\
-			\midrule
-			\textbf{\textbullet} & \blue{Examine MKPT Data} & press DATA OSB on HSI and select Markpoint as required \\
-			\midrule
-			\textbf{\textbullet} & \blue{Employment} & a) \ Select desired markpoint with Increment / Decrement OSBs \\
-			& & b) \ Box WPDSG OSB to designate markpoint as the target point \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Markpoint} & Used to mark a point of interest \\
+		& & Maximum: 9 \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activate Navigation} & \textbf{\textbullet} \ WYPT boxed on HSI \\
+		& & \textbf{\textbullet} \ M\# selected with Increment/Decrement OSBs \\
+		\midrule
+		\textbf{\textbullet} & \blue{Examine MKPT Data} & press DATA OSB on HSI and select Markpoint as required \\
+		\midrule
+		\textbf{\textbullet} & \blue{Employment} & a) \ Select desired markpoint with Increment / Decrement OSBs \\
+		& & b) \ Box WPDSG OSB to designate markpoint as the target point \\
+	\end{listlongtable}
 
 	\subsection{MARKPOINT - ADD}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Overfly Method} & a) \ Verify no target designated \\
-			& & b) \ press MK\# OSB on HSI/SA to create Markpoint  on current location \\
-			\midrule
-			\textbf{\textbullet} & \blue{Target Designate} & a) \ Designate Target with sensor as required \\
-			& \blue{Method} & b) \ Press MK\# OSB on HSI/SA to create Markpoint on current designation \\
-			\midrule
-			\textbf{\textbullet} & \blue{Note} & After MK9 has been created the next Markpoint will overwrite MK1 \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Overfly Method} & a) \ Verify no target designated \\
+		& & b) \ press MK\# OSB on HSI/SA to create Markpoint  on current location \\
+		\midrule
+		\textbf{\textbullet} & \blue{Target Designate} & a) \ Designate Target with sensor as required \\
+		& \blue{Method} & b) \ Press MK\# OSB on HSI/SA to create Markpoint on current designation \\
+		\midrule
+		\textbf{\textbullet} & \blue{Note} & After MK9 has been created the next Markpoint will overwrite MK1 \\
+	\end{listlongtable}
 
 	\subsection{ADF}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1) & \blue{ADF Switch} & To desired COMM \\
-			\midrule
-			2) & \blue{Matching COMM} & Set ADF frequency as required (FM) \\
-			\midrule
-			3) & \blue{HSI} & Circle will appear indicating direction of ADF beacon on compass rose \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1) & \blue{ADF Switch} & To desired COMM \\
+		\midrule
+		2) & \blue{Matching COMM} & Set ADF frequency as required (FM) \\
+		\midrule
+		3) & \blue{HSI} & Circle will appear indicating direction of ADF beacon on compass rose \\
+	\end{listlongtable}
 
 	\subsection{TACAN}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{TACAN} & Tactical Air Navigation \\
-			& & Provide direction \& distance to beacon \\
-			\midrule
-			1) & \blue{Frequency} & Determine TACAN frequency required \\
-			\midrule
-			2) & \blue{UFC} & a) \ Press TCN OSB and cycle to ON \\
-			& & b) \ Verify T/R mode active \\
-			& & c) \ Input channel \#\# , ENT\\
-			& & d) \ Set X/Y as required \\
-			& & e) \ Set A/A mode if required \\
-			\midrule
-			3) & \blue{HSI} & a) \ Box TCN OSB \\
-			& & b) Set CRS as required \\
-			\midrule
-			\textbf{\textbullet} & \blue{TACAN Data} & press DATA OSB on HSI while TCN boxed to view TACAN Database of all stations and their coordinates \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{TACAN} & Tactical Air Navigation \\
+		& & Provide direction \& distance to beacon \\
+		\midrule
+		1) & \blue{Frequency} & Determine TACAN frequency required \\
+		\midrule
+		2) & \blue{UFC} & a) \ Press TCN OSB and cycle to ON \\
+		& & b) \ Verify T/R mode active \\
+		& & c) \ Input channel \#\# , ENT\\
+		& & d) \ Set X/Y as required \\
+		& & e) \ Set A/A mode if required \\
+		\midrule
+		3) & \blue{HSI} & a) \ Box TCN OSB \\
+		& & b) Set CRS as required \\
+		\midrule
+		\textbf{\textbullet} & \blue{TACAN Data} & press DATA OSB on HSI while TCN boxed to view TACAN Database of all stations and their coordinates \\
+	\end{listlongtable}
 
 	\cleardoublepage
 
+	\subsection{AN/ALR-67 RWR}
 	\begin{multicols*}{2}
-		\subsection{AN/ALR-67 RWR}
 		\begin{center}
 			\begin{tabular}{c | p{1.5cm}  p{2.5cm}}
 				\toprule
@@ -1175,70 +1081,58 @@
 	\end{multicols*}
 
 	\subsection{AN/ALE-47 ACMDS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{ACMDS} & Airborne Countermeasures Dispenser System \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Arm: ON \\
-			& & \textbf{\textbullet} \ DISPENSER Switch: ON (MIDDLE) \\
-			& & \textbf{\textbullet} \ ALE-47 Mode: not STBY \\
-			\midrule
-			\textbf{\textbullet} & \blue{Self-Test} & Once airborne ALE-47 enters SF TEST before cycling to STBY \\
-			\midrule
-			\textbf{\textbullet} & \blue{Set Mode} & MODE OSB with ALE-47 Boxed \\
-			\midrule
-			\textbf{\textbullet} & \blue{Program Creation} & a) \ Box ALE-47 OSB \\
-			& & b) \ Press ARM OSB \\
-			& & c) \ Press CHAFF/FLAR OSBs, set \# \\
-			& & d) \ press RPT OSB, set \# repetitions \\
-			& & e) \ press INT OSB, set interval \\
-			& & f) \ press SAVE OSB to save program \\
-			& & \textbf{Note:} Use INCREMENT / DECREMENT OSBs to change values \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Dispense Switch: AFT activates selected program \\
-			& & \textbf{\textbullet} \ Dispense Switch: FWD activates program 5 by default, can be cycled with STEP OSB \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{ACMDS} & Airborne Countermeasures Dispenser System \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Arm: ON \\
+		& & \textbf{\textbullet} \ DISPENSER Switch: ON (MIDDLE) \\
+		& & \textbf{\textbullet} \ ALE-47 Mode: not STBY \\
+		\midrule
+		\textbf{\textbullet} & \blue{Self-Test} & Once airborne ALE-47 enters SF TEST before cycling to STBY \\
+		\midrule
+		\textbf{\textbullet} & \blue{Set Mode} & MODE OSB with ALE-47 Boxed \\
+		\midrule
+		\textbf{\textbullet} & \blue{Program Creation} & a) \ Box ALE-47 OSB \\
+		& & b) \ Press ARM OSB \\
+		& & c) \ Press CHAFF/FLAR OSBs, set \# \\
+		& & d) \ press RPT OSB, set \# repetitions \\
+		& & e) \ press INT OSB, set interval \\
+		& & f) \ press SAVE OSB to save program \\
+		& & \textbf{Note:} Use INCREMENT / DECREMENT OSBs to change values \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Dispense Switch: AFT activates selected program \\
+		& & \textbf{\textbullet} \ Dispense Switch: FWD activates program 5 by default, can be cycled with STEP OSB \\
+	\end{listlongtable}
 
 	\subsection{AN/ALE-47 ACMDS - MODES}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{MAN} & \textbf{Manual:} Program can be stored and edited \\
-			& & Chosen by pilot \\
-			\midrule
-			\textbf{\textbullet} & \blue{AUTO} & \textbf{Automatic:} ALE-47 chooses when and what countermeasures to deploy \\
-			& & \textbf{Very Wasteful} \\
-			\midrule
-			\textbf{\textbullet} & \blue{S/A} & \textbf{Semi-Automatic:} ALE-47 chooses program. Pilot controls release \\
-			\midrule
-			\textbf{\textbullet} & \blue{STBY} & \textbf{Standby Mode} \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{MAN} & \textbf{Manual:} Program can be stored and edited \\
+		& & Chosen by pilot \\
+		\midrule
+		\textbf{\textbullet} & \blue{AUTO} & \textbf{Automatic:} ALE-47 chooses when and what countermeasures to deploy \\
+		& & \textbf{Very Wasteful} \\
+		\midrule
+		\textbf{\textbullet} & \blue{S/A} & \textbf{Semi-Automatic:} ALE-47 chooses program. Pilot controls release \\
+		\midrule
+		\textbf{\textbullet} & \blue{STBY} & \textbf{Standby Mode} \\
+	\end{listlongtable}
 
 	\subsection{AN/ALQ-165 ASPJ}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{OFF} & Turns off ECM Pod \\
-			\midrule
-			\textbf{\textbullet} & \blue{STBY} & Standby Mode \\
-			\midrule
-			\textbf{\textbullet} & \blue{BIT} & ECM jammer pod Build-In-Test \\
-			\midrule
-			\textbf{\textbullet} & \blue{REC} & \textbf{Receive Mode:} Jammer is passive \\
-			& & \textbf{\textbullet} \ Collects information on detected radars \\
-			& & \textbf{\textbullet} \ Does NOT transmit jamming signal \\
-			\midrule
-			\textbf{\textbullet} & \blue{X-MIT} & \textbf{Transmit Mode:} Jammer is active \\
-			& & \textbf{\textbullet} \ ECM pod will automatically transmit jamming signal when radar lock detected on own aircraft \\
-			& & \textbf{\textbullet} \ When ASPJ is actively jamming own radar will be unavailable \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{OFF} & Turns off ECM Pod \\
+		\midrule
+		\textbf{\textbullet} & \blue{STBY} & Standby Mode \\
+		\midrule
+		\textbf{\textbullet} & \blue{BIT} & ECM jammer pod Build-In-Test \\
+		\midrule
+		\textbf{\textbullet} & \blue{REC} & \textbf{Receive Mode:} Jammer is passive \\
+		& & \textbf{\textbullet} \ Collects information on detected radars \\
+		& & \textbf{\textbullet} \ Does NOT transmit jamming signal \\
+		\midrule
+		\textbf{\textbullet} & \blue{X-MIT} & \textbf{Transmit Mode:} Jammer is active \\
+		& & \textbf{\textbullet} \ ECM pod will automatically transmit jamming signal when radar lock detected on own aircraft \\
+		& & \textbf{\textbullet} \ When ASPJ is actively jamming own radar will be unavailable \\
+	\end{listlongtable}
 
 	\subsection{DATALINK}
 	\begin{center}
@@ -1267,469 +1161,377 @@
 	\section{RWS - RANGE WHILE SEARCH}
 
 	\subsection{RWS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Range While Scan} & \textbf{Default A/A Radar Mode} \\
-			& & Long range BVR mode. Antenna follows designated search pattern and displays all tracks discovered in each sweep \\
-			\midrule
-			\textbf{\textbullet} & \blue{Sensor Select Switch} & \textbf{\textbullet} \ FWD: Switch to ACM Boresight \\
-			& & \textbf{\textbullet} \ AFT: Assign TDC to AMPCD \\
-			& & \textbf{\textbullet} \ LEFT: Assign TDC to left DDI \\
-			& & \textbf{\textbullet} \ RIGHT: Assign TDC to right DDI \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Range While Scan} & \textbf{Default A/A Radar Mode} \\
+		& & Long range BVR mode. Antenna follows designated search pattern and displays all tracks discovered in each sweep \\
+		\midrule
+		\textbf{\textbullet} & \blue{Sensor Select Switch} & \textbf{\textbullet} \ FWD: Switch to ACM Boresight \\
+		& & \textbf{\textbullet} \ AFT: Assign TDC to AMPCD \\
+		& & \textbf{\textbullet} \ LEFT: Assign TDC to left DDI \\
+		& & \textbf{\textbullet} \ RIGHT: Assign TDC to right DDI \\
+	\end{listlongtable}
 
 	\subsection{RWS - LTWS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Latent Track While} & \textbf{RWS Submode} \\
-			& \blue{Scan} & Allows HAFU symbology for contacts and integration of offboard trackfiles \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & DATA subpage on Radar Page \\
-			\midrule
-			\textbf{\textbullet} & \blue{HAFU Symbology} & Only displayed if TDC cursor is over trackfile or trackfile is L\&S or DT2 \\
-			& & Offboard only tracks always displayed as HAFU \\
-			& & Launch acceptable ranges displayed for L\&S and DT2 \\
-			\midrule
-			\textbf{\textbullet} & \blue{IFF Interrogation} & Automatically when target under cursor \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Latent Track While} & \textbf{RWS Submode} \\
+		& \blue{Scan} & Allows HAFU symbology for contacts and integration of offboard trackfiles \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & DATA subpage on Radar Page \\
+		\midrule
+		\textbf{\textbullet} & \blue{HAFU Symbology} & Only displayed if TDC cursor is over trackfile or trackfile is L\&S or DT2 \\
+		& & Offboard only tracks always displayed as HAFU \\
+		& & Launch acceptable ranges displayed for L\&S and DT2 \\
+		\midrule
+		\textbf{\textbullet} & \blue{IFF Interrogation} & Automatically when target under cursor \\
+	\end{listlongtable}
 
 	\section{TWS - TRACK WHILE SCAN}
 
 	\subsection{TWS - DESIGNATION}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TWS selected \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{L\&S} (Primary Target) & TDC DEPRESS while over trackfile \\
-			\midrule
-			\textbf{\textbullet} & \blue{Cycle L\&S} & UNDESIGNATE Button (no DT2 designated) \\
-			\midrule
-			\textbf{\textbullet} & \blue{DT2} (Secondary Target) & TDC DEPRESS while over second trackfile \\
-			\midrule
-			\textbf{\textbullet} & \blue{Swap L\&S DT2} & UNDESIGNATE Button \\
-			\midrule
-			\textbf{\textbullet} & \blue{STT Lock} & TDC DEPRESS again over L\&S trackfile \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TWS selected \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{L\&S} (Primary Target) & TDC DEPRESS while over trackfile \\
+		\midrule
+		\textbf{\textbullet} & \blue{Cycle L\&S} & UNDESIGNATE Button (no DT2 designated) \\
+		\midrule
+		\textbf{\textbullet} & \blue{DT2} (Secondary Target) & TDC DEPRESS while over second trackfile \\
+		\midrule
+		\textbf{\textbullet} & \blue{Swap L\&S DT2} & UNDESIGNATE Button \\
+		\midrule
+		\textbf{\textbullet} & \blue{STT Lock} & TDC DEPRESS again over L\&S trackfile \\
+	\end{listlongtable}
 
 	\subsection{TWS - SCAN CENTERING METHODS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{MAN} & Manual: Azimuth centered on TDC cursor. Elevation can also be manually manipulated \\
-			\midrule
-			\textbf{\textbullet} & \blue{AUTO} & Automatic: Azimuth, Elevation centered on L\&S trackfile. If L\&S trackfile lost returns to MAN \\
-			\midrule
-			\textbf{\textbullet} & \blue{BIAS} & TDC DEPRESS on empty area to center azimuth there. Elevation controlled manually. Allows TDC to move separately from scan azimuth \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{MAN} & Manual: Azimuth centered on TDC cursor. Elevation can also be manually manipulated \\
+		\midrule
+		\textbf{\textbullet} & \blue{AUTO} & Automatic: Azimuth, Elevation centered on L\&S trackfile. If L\&S trackfile lost returns to MAN \\
+		\midrule
+		\textbf{\textbullet} & \blue{BIAS} & TDC DEPRESS on empty area to center azimuth there. Elevation controlled manually. Allows TDC to move separately from scan azimuth \\
+	\end{listlongtable}
 
 	\subsection{TWS - SCAN RAID}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{SCAN RAID Mode} & 22 deg, 3 bar scan centered on L\&S \\
-			& & Radar will attempt to find multiple targets out of single target \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ L\&S trackfile selected \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ RAID button \\
-			& & \textbf{\textbullet} \ RAID OSB \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ RAID deselect \\
-			& & \textbf{\textbullet} \ RSET OSB \\
-			& & \textbf{\textbullet} \ UNDESIGNATE button \\
-			& & \textbf{\textbullet} \ L\&S lost \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{SCAN RAID Mode} & 22 deg, 3 bar scan centered on L\&S \\
+		& & Radar will attempt to find multiple targets out of single target \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ L\&S trackfile selected \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ RAID button \\
+		& & \textbf{\textbullet} \ RAID OSB \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ RAID deselect \\
+		& & \textbf{\textbullet} \ RSET OSB \\
+		& & \textbf{\textbullet} \ UNDESIGNATE button \\
+		& & \textbf{\textbullet} \ L\&S lost \\
+	\end{listlongtable}
 
 	\subsection{TWS - EXP}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{EXP Mode} & 10nm x 20 deg centered around L\&S \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ L\&S trackfile selected \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & EXP OSB \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ EXP OSB \\
-			& & \textbf{\textbullet} \ RSET OSB \\
-			& & \textbf{\textbullet} \ L\&S lost \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{EXP Mode} & 10nm x 20 deg centered around L\&S \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ L\&S trackfile selected \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & EXP OSB \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & \textbf{\textbullet} \ EXP OSB \\
+		& & \textbf{\textbullet} \ RSET OSB \\
+		& & \textbf{\textbullet} \ L\&S lost \\
+	\end{listlongtable}
 
 	\section{ACM - AIR COMBAT MANEUVERING}
 
 	\subsection{ACM - BST}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Boresight} & $\pm$ 1.7 deg vertical \\
-			& & $\pm$ 3.3 deg azimuth \\
-			& & Range: 10nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: OFF \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & SCS: FWD (enters BST) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Boresight} & $\pm$ 1.7 deg vertical \\
+		& & $\pm$ 3.3 deg azimuth \\
+		& & Range: 10nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: OFF \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & SCS: FWD (enters BST) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{ACM - VACQ}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Vertical Acquis.} & -13 deg to 46 deg vertical \\
-			& & 6 deg azimuth \\
-			& & Range: 5nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: OFF \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & SCS: FWD (enters BST) \\
-			& & then AFT (enters VACQ) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Vertical Acquis.} & -13 deg to 46 deg vertical \\
+		& & 6 deg azimuth \\
+		& & Range: 5nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: OFF \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & SCS: FWD (enters BST) \\
+		& & then AFT (enters VACQ) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\clearpage
 
 	\subsection{ACM - WACQ}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Caged Wide Acquis.} & -9 deg to +6 deg vertical \\
-			& & 60 deg azimuth \\
-			\midrule
-			\textbf{\textbullet} & \blue{Uncaged Wide Acquis.} & NOT IMPLEMENTED \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: OFF \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & SCS: FWD (enters BST) \\
-			& & then LEFT (enters WACQ) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle Mode} & CAGE/UNCAGE \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Caged Wide Acquis.} & -9 deg to +6 deg vertical \\
+		& & 60 deg azimuth \\
+		\midrule
+		\textbf{\textbullet} & \blue{Uncaged Wide Acquis.} & NOT IMPLEMENTED \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: OFF \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & SCS: FWD (enters BST) \\
+		& & then LEFT (enters WACQ) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle Mode} & CAGE/UNCAGE \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{ACM - GACQ}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Gun Acquisition} & -14 deg to +6 deg vertical \\
-			& & 20 deg azimuth \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: OFF \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & Automatically enabled upon guns selection \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Gun Acquisition} & -14 deg to +6 deg vertical \\
+		& & 20 deg azimuth \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: OFF \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & Automatically enabled upon guns selection \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\section{LOCK ACQUISITION}
 
 	\subsection{STT}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen\\
-			\midrule
-			\textbf{\textbullet} & \blue{RWS Designation} & TDC DEPRESS to STT \\
-			\midrule
-			\textbf{\textbullet} & \blue{LTWS Designation} & TDC DEPRESS to designate L\&S \\ & & second TDC DEPRESS to STT \\
-			\midrule
-			\textbf{\textbullet} & \blue{TWS Designation} & TDC DEPRESS to designate L\&S \\ & & second TDC DEPRESS to STT \\
-			\midrule
-			\textbf{\textbullet} & \blue{Undesignate} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen\\
+		\midrule
+		\textbf{\textbullet} & \blue{RWS Designation} & TDC DEPRESS to STT \\
+		\midrule
+		\textbf{\textbullet} & \blue{LTWS Designation} & TDC DEPRESS to designate L\&S \\ & & second TDC DEPRESS to STT \\
+		\midrule
+		\textbf{\textbullet} & \blue{TWS Designation} & TDC DEPRESS to designate L\&S \\ & & second TDC DEPRESS to STT \\
+		\midrule
+		\textbf{\textbullet} & \blue{Undesignate} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{AACQ}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Automatic Acquisition} & Fast method to acquire lock from BVR mode \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			& & \textbf{\textbullet} \ Radar not in an ACM mode \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & SCS towards radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivate} & SCS AFT \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Automatic Acquisition} & Fast method to acquire lock from BVR mode \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		& & \textbf{\textbullet} \ Radar not in an ACM mode \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & SCS towards radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivate} & SCS AFT \\
+	\end{listlongtable}
 
 	\subsection{JHMCS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{LHACQ} & Long Range Helmet Acquisition: 40nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{HACQ} & Helmet Acquisition: 10nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: BRT \\
-			\midrule
-			\textbf{\textbullet} & \blue{LHACQ Activation} & SCS: FWD long (>0.8s) \\
-			\midrule
-			\textbf{\textbullet} & \blue{HACQ Activation} & SCS: FWD short (<0.8s) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivate} & SCS AFT \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{LHACQ} & Long Range Helmet Acquisition: 40nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{HACQ} & Helmet Acquisition: 10nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: BRT \\
+		\midrule
+		\textbf{\textbullet} & \blue{LHACQ Activation} & SCS: FWD long (>0.8s) \\
+		\midrule
+		\textbf{\textbullet} & \blue{HACQ Activation} & SCS: FWD short (<0.8s) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivate} & SCS AFT \\
+	\end{listlongtable}
 
 	\section{MAP}
 
 	\subsection{MAP}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar: OPR \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ or SURF OSB on RDR ATTK page \\
-			\midrule
-			\textbf{\textbullet} & \blue{PEN} & Scans small area on ground \\
-			\midrule
-			\textbf{\textbullet} & \blue{FAN} & Broader/quicker scan, less defined image \\
-			& & narrow in azimuth, broad in elevation \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar: OPR \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ or SURF OSB on RDR ATTK page \\
+		\midrule
+		\textbf{\textbullet} & \blue{PEN} & Scans small area on ground \\
+		\midrule
+		\textbf{\textbullet} & \blue{FAN} & Broader/quicker scan, less defined image \\
+		& & narrow in azimuth, broad in elevation \\
+	\end{listlongtable}
 
 	\subsection{MAP - DESIGNATION}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS while over desired location \\
-			& & \textbf{\textbullet} \ Range will auto adjust \\
-			& & \textbf{\textbullet} \ Cross marks designated point on Radar \\
-			& & \textbf{\textbullet} \ Diamond marks designated point on HUD \\
-			\midrule
-			\textbf{\textbullet} & \blue{Zoom} & using EXP1, EXP2, EXP3 modes \\
-			\midrule
-			\textbf{\textbullet} & \blue{Undesignation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS while over desired location \\
+		& & \textbf{\textbullet} \ Range will auto adjust \\
+		& & \textbf{\textbullet} \ Cross marks designated point on Radar \\
+		& & \textbf{\textbullet} \ Diamond marks designated point on HUD \\
+		\midrule
+		\textbf{\textbullet} & \blue{Zoom} & using EXP1, EXP2, EXP3 modes \\
+		\midrule
+		\textbf{\textbullet} & \blue{Undesignation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{MAP - EXP1}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{EXP1} & \textbf{\textbullet} \ Lowest resolution expanded mode \\
-			& & \textbf{\textbullet} \ Range: 40nm \\
-			& & \textbf{\textbullet} \ Azimuth: 45deg \\
-			& & \textbf{\textbullet} \ Not ground stabilized unless designation exists (snowplow) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar Mode: MAP \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ EXP1 OSB \\
-			& & 2. \ Press \& hold TDC DEPRESS \\
-			& & 3. \ Slew to desired region \\
-			& & 4. \ Release TDC DEPRESS \\
-			& & \textbf{\textbullet} \ Range will auto adjust \\
-			\midrule
-			\textbf{\textbullet} & \blue{FAST Option} & Boxing FAST scan option doubles radar's rate of scan for approximately half the scan quality \\
-			\midrule
-			\textbf{\textbullet} & \blue{Doppler Shift} & Area directly in front and at extreme edges of radar not visible \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{EXP1} & \textbf{\textbullet} \ Lowest resolution expanded mode \\
+		& & \textbf{\textbullet} \ Range: 40nm \\
+		& & \textbf{\textbullet} \ Azimuth: 45deg \\
+		& & \textbf{\textbullet} \ Not ground stabilized unless designation exists (snowplow) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar Mode: MAP \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ EXP1 OSB \\
+		& & 2. \ Press \& hold TDC DEPRESS \\
+		& & 3. \ Slew to desired region \\
+		& & 4. \ Release TDC DEPRESS \\
+		& & \textbf{\textbullet} \ Range will auto adjust \\
+		\midrule
+		\textbf{\textbullet} & \blue{FAST Option} & Boxing FAST scan option doubles radar's rate of scan for approximately half the scan quality \\
+		\midrule
+		\textbf{\textbullet} & \blue{Doppler Shift} & Area directly in front and at extreme edges of radar not visible \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{MAP - EXP2}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{EXP2} & \textbf{\textbullet} \ Next higher resolution from EXP1 \\
-			& & \textbf{\textbullet} \ Range: 40nm \\
-			& & \textbf{\textbullet} \ Ground stabilized regardless if designation exists unless outside of radar gimbal limits \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar Mode: MAP \\
-			& & \textbf{\textbullet} \ or Radar Mode: EXP1 \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ EXP2 OSB \\
-			& & 2. \ Press \& hold TDC DEPRESS \\
-			& & 3. \ Slew to desired region \\
-			& & 4. \ Release TDC DEPRESS \\
-			& & \textbf{\textbullet} \ Range will auto adjust \\
-			\midrule
-			\textbf{\textbullet} & \blue{FAST Option} & Boxing FAST scan option doubles radar's rate of scan for approximately half the scan quality \\
-			\midrule
-			\textbf{\textbullet} & \blue{Doppler Shift} & Area directly in front and at extreme edges of radar not visible \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{EXP2} & \textbf{\textbullet} \ Next higher resolution from EXP1 \\
+		& & \textbf{\textbullet} \ Range: 40nm \\
+		& & \textbf{\textbullet} \ Ground stabilized regardless if designation exists unless outside of radar gimbal limits \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar Mode: MAP \\
+		& & \textbf{\textbullet} \ or Radar Mode: EXP1 \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ EXP2 OSB \\
+		& & 2. \ Press \& hold TDC DEPRESS \\
+		& & 3. \ Slew to desired region \\
+		& & 4. \ Release TDC DEPRESS \\
+		& & \textbf{\textbullet} \ Range will auto adjust \\
+		\midrule
+		\textbf{\textbullet} & \blue{FAST Option} & Boxing FAST scan option doubles radar's rate of scan for approximately half the scan quality \\
+		\midrule
+		\textbf{\textbullet} & \blue{Doppler Shift} & Area directly in front and at extreme edges of radar not visible \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{MAP - EXP3}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{EXP3} & \textbf{\textbullet} \ Synthetic-Aperture Radar (SAR) Map \\
-			& & \textbf{\textbullet} \ Range: 30nm \\
-			& & \textbf{\textbullet} \ Ground stabilized even w/o designation. \\
-			& & \textbf{\textbullet} \ 1.2 x 1.2nm, constant area and resolution regardless of range \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar Mode: MAP \\
-			& & \textbf{\textbullet} \ or Radar Mode: EXP1/EXP2 \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ EXP3 OSB \\
-			& & 2. \ Press \& hold TDC DEPRESS \\
-			& & 3. \ Slew to desired region \\
-			& & 4. \ Release TDC DEPRESS \\
-			& & \textbf{\textbullet} \ Range will auto adjust \\
-			\midrule
-			\textbf{\textbullet} & \blue{FAST Option} & Boxing FAST scan option doubles radar's rate of scan for approximately half the scan quality \\
-			\midrule
-			\textbf{\textbullet} & \blue{Doppler Shift} & Area directly in front and at extreme edges of radar not visible \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{EXP3} & \textbf{\textbullet} \ Synthetic-Aperture Radar (SAR) Map \\
+		& & \textbf{\textbullet} \ Range: 30nm \\
+		& & \textbf{\textbullet} \ Ground stabilized even w/o designation. \\
+		& & \textbf{\textbullet} \ 1.2 x 1.2nm, constant area and resolution regardless of range \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Radar Mode: MAP \\
+		& & \textbf{\textbullet} \ or Radar Mode: EXP1/EXP2 \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ EXP3 OSB \\
+		& & 2. \ Press \& hold TDC DEPRESS \\
+		& & 3. \ Slew to desired region \\
+		& & 4. \ Release TDC DEPRESS \\
+		& & \textbf{\textbullet} \ Range will auto adjust \\
+		\midrule
+		\textbf{\textbullet} & \blue{FAST Option} & Boxing FAST scan option doubles radar's rate of scan for approximately half the scan quality \\
+		\midrule
+		\textbf{\textbullet} & \blue{Doppler Shift} & Area directly in front and at extreme edges of radar not visible \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{MAP - EXP DESIGNATION}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \  Radar Mode: EXP (EXP3 recommended) \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Press \& hold TDC DEPRESS \\
-			& & 2. \ Slew to desired spot \\
-			& & 3. \ Release TDC DEPRESS to designate \\
-			\midrule
-			\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ Range will auto adjust \\
-			& & \textbf{\textbullet} \ Cross marks designated point on Radar \\
-			& & \textbf{\textbullet} \ Diamond marks designated point on HUD \\
-			\midrule
-			\textbf{\textbullet} & \blue{TGP} & Targeting pod will automatically slave to designated point if FLIR ON and TGP unstowed \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \  Radar Mode: EXP (EXP3 recommended) \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Press \& hold TDC DEPRESS \\
+		& & 2. \ Slew to desired spot \\
+		& & 3. \ Release TDC DEPRESS to designate \\
+		\midrule
+		\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ Range will auto adjust \\
+		& & \textbf{\textbullet} \ Cross marks designated point on Radar \\
+		& & \textbf{\textbullet} \ Diamond marks designated point on HUD \\
+		\midrule
+		\textbf{\textbullet} & \blue{TGP} & Targeting pod will automatically slave to designated point if FLIR ON and TGP unstowed \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE button \\
+	\end{listlongtable}
 
 	\subsection{GMT}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{GMT Mode} & Ground Moving Target radar mode scans for highlights \& moving targets through doppler shift. Trackfiles displayed as bricks \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ RDR: OPR \\
-			& & \textbf{\textbullet} \ Master Mode: A/G \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & press MAP OSB from A/G MAP page\\
-			\midrule
-			\textbf{\textbullet} & \blue{Interleaved Option} & Press INTL OSB \\
-			& & GMT \& MAP modes interleaved, mode is GMT/MAP \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{GMT Mode} & Ground Moving Target radar mode scans for highlights \& moving targets through doppler shift. Trackfiles displayed as bricks \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ RDR: OPR \\
+		& & \textbf{\textbullet} \ Master Mode: A/G \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & press MAP OSB from A/G MAP page\\
+		\midrule
+		\textbf{\textbullet} & \blue{Interleaved Option} & Press INTL OSB \\
+		& & GMT \& MAP modes interleaved, mode is GMT/MAP \\
+	\end{listlongtable}
 
 	\subsection{GMT - GMTT}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{GMTT} & Ground Moving Target Track \\
-			& & Range: 10nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			& & \textbf{\textbullet} \ Radar Mode: GMT \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Slew TDC over desired target \\
-			& & 2. \ SCS: Towards current radar screen to command acquisition \\
-			\midrule
-			\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ Radar page: brick with motion vector, speed, \& heading \\
-			& & \textbf{\textbullet} \ HUD: diamond \\
-			& & \textbf{\textbullet} \ point can be used/slaved to by other sensors \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE Button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{GMTT} & Ground Moving Target Track \\
+		& & Range: 10nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		& & \textbf{\textbullet} \ Radar Mode: GMT \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Slew TDC over desired target \\
+		& & 2. \ SCS: Towards current radar screen to command acquisition \\
+		\midrule
+		\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ Radar page: brick with motion vector, speed, \& heading \\
+		& & \textbf{\textbullet} \ HUD: diamond \\
+		& & \textbf{\textbullet} \ point can be used/slaved to by other sensors \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE Button \\
+	\end{listlongtable}
 
 	\subsection{SEA}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{SEA Mode} & SEA radar mode scans for highlights \& moving naval targets through doppler shift. Trackfiles displayed as bricks. Additional filtering applied \& scan rates reduced \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ RDR: OPR \\
-			& & \textbf{\textbullet} \ Master Mode: A/G \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & press MAP OSB from A/G MAP page\\
-			\midrule
-			\textbf{\textbullet} & \blue{Interleaved Option} & Press INTL OSB \\
-			& & GMT \& MAP modes interleaved, mode is SEA/MAP \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{SEA Mode} & SEA radar mode scans for highlights \& moving naval targets through doppler shift. Trackfiles displayed as bricks. Additional filtering applied \& scan rates reduced \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ RDR: OPR \\
+		& & \textbf{\textbullet} \ Master Mode: A/G \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & press MAP OSB from A/G MAP page\\
+		\midrule
+		\textbf{\textbullet} & \blue{Interleaved Option} & Press INTL OSB \\
+		& & GMT \& MAP modes interleaved, mode is SEA/MAP \\
+	\end{listlongtable}
 
 	\subsection{SEA - TARGET TRACKING}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
-			& & \textbf{\textbullet} \ Radar Mode: SEA \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Slew TDC over desired target \\
-			& & 2. \ SCS: Towards current radar screen to command acquisition \\
-			\midrule
-			\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ Radar page: brick with motion vector, speed, \& heading \\
-			& & \textbf{\textbullet} \ HUD: diamond \\
-			& & \textbf{\textbullet} \ point can be used/slaved to by other sensors \\
-			\midrule
-			\textbf{\textbullet} & \blue{Harpoon Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ Target Locked \\
-			& & \textbf{\textbullet}  \ HPD Mode: R/BL \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE Button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ TDC slaved to current radar screen \\
+		& & \textbf{\textbullet} \ Radar Mode: SEA \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Slew TDC over desired target \\
+		& & 2. \ SCS: Towards current radar screen to command acquisition \\
+		\midrule
+		\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ Radar page: brick with motion vector, speed, \& heading \\
+		& & \textbf{\textbullet} \ HUD: diamond \\
+		& & \textbf{\textbullet} \ point can be used/slaved to by other sensors \\
+		\midrule
+		\textbf{\textbullet} & \blue{Harpoon Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ Target Locked \\
+		& & \textbf{\textbullet}  \ HPD Mode: R/BL \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & UNDESIGNATE Button \\
+	\end{listlongtable}
 
 	\cleardoublepage
 
@@ -1741,230 +1543,186 @@
 	\section{AAQ-28 LITENING II}
 
 	\subsection{CONTROLS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Display Selection} & SCS: towards Targeting pod display \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle PTRK/ATRK} & SCS: towards Selected Display \\
-			\midrule
-			\textbf{\textbullet} & \blue{Zoom} & \textbf{\textbullet} \ Radar Elevation Control \\
-			& & \textbf{\textbullet} \ Zoom OSBs \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle Wide/Nar FOV} & \textbf{\textbullet} \ RAID/FLIR Button short \\
-			& & \textbf{\textbullet} \ NAR/WIDE OSB \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle CCD/FLIR} & \textbf{\textbullet} \ RAID/FLIR Button long \\
-			& & \textbf{\textbullet} \ FLIR/CCD OSB\\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew Reticle} & TDC Slew \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designate} & TDC DEPRESS \\
-			\midrule
-			\textbf{\textbullet} & \blue{Undesignate} & NWS/UNDESIGNATE Button \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle LST} & CAGE/UNCAGE Button \\
-			\midrule
-			\textbf{\textbullet} & \blue{Lase} & TRIGGER if TRIG mode boxed \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Display Selection} & SCS: towards Targeting pod display \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle PTRK/ATRK} & SCS: towards Selected Display \\
+		\midrule
+		\textbf{\textbullet} & \blue{Zoom} & \textbf{\textbullet} \ Radar Elevation Control \\
+		& & \textbf{\textbullet} \ Zoom OSBs \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle Wide/Nar FOV} & \textbf{\textbullet} \ RAID/FLIR Button short \\
+		& & \textbf{\textbullet} \ NAR/WIDE OSB \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle CCD/FLIR} & \textbf{\textbullet} \ RAID/FLIR Button long \\
+		& & \textbf{\textbullet} \ FLIR/CCD OSB\\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew Reticle} & TDC Slew \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designate} & TDC DEPRESS \\
+		\midrule
+		\textbf{\textbullet} & \blue{Undesignate} & NWS/UNDESIGNATE Button \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle LST} & CAGE/UNCAGE Button \\
+		\midrule
+		\textbf{\textbullet} & \blue{Lase} & TRIGGER if TRIG mode boxed \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
-			\midrule
-			\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
-			\midrule
-			\textbf{\textbullet} & \blue{Stabilized Pointing} & Entered when target designated from Snowplow or cycled from ATRK/PTRK \\
-			\midrule
-			\textbf{\textbullet} & \blue{Waypoint Slaving} & Available using HSI (TGP snaps to WYPT) \\
-			\midrule
-			\textbf{\textbullet} & \blue{ATRK} & Tracks specific area. Best for fixed targets \\
-			\midrule
-			\textbf{\textbullet} & \blue{PTRK} & Tracks specific Point. Best for moving targets \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
+		\midrule
+		\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
+		\midrule
+		\textbf{\textbullet} & \blue{Stabilized Pointing} & Entered when target designated from Snowplow or cycled from ATRK/PTRK \\
+		\midrule
+		\textbf{\textbullet} & \blue{Waypoint Slaving} & Available using HSI (TGP snaps to WYPT) \\
+		\midrule
+		\textbf{\textbullet} & \blue{ATRK} & Tracks specific area. Best for fixed targets \\
+		\midrule
+		\textbf{\textbullet} & \blue{PTRK} & Tracks specific Point. Best for moving targets \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - VVSLV}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Press UNDESIGNATE twice \\
-			& & \textbf{\textbullet} \ or press VVSLV OSB on FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{RTCL} & Box RTCL OSB to display TGP reticle \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Press UNDESIGNATE twice \\
+		& & \textbf{\textbullet} \ or press VVSLV OSB on FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{RTCL} & Box RTCL OSB to display TGP reticle \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - SNOWPLOW}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
-			& & \textbf{\textbullet} \ 0 deg left/right \\
-			& & \textbf{\textbullet} \ -8 deg down \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Press UNDESIGNATE twice to select VVSLV \& unstow TGP \\
-			& & 2. \ Press UNDESIGNATE twice to deselect VVSLV \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
+		& & \textbf{\textbullet} \ 0 deg left/right \\
+		& & \textbf{\textbullet} \ -8 deg down \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Press UNDESIGNATE twice to select VVSLV \& unstow TGP \\
+		& & 2. \ Press UNDESIGNATE twice to deselect VVSLV \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - STABILIZED POINTING}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Stabilized Pointing} & FLIR can be slewed freely. Designated target is constantly updated to current location. \\
-			& & Ground stabilized \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & Entered automatically when \\
-			& & \textbf{\textbullet} \ Target designated from Snowplow \\
-			& & \textbf{\textbullet} \ Cycled to from Auto Track or Point Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & Constantly updated \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Stabilized Pointing} & FLIR can be slewed freely. Designated target is constantly updated to current location. \\
+		& & Ground stabilized \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & Entered automatically when \\
+		& & \textbf{\textbullet} \ Target designated from Snowplow \\
+		& & \textbf{\textbullet} \ Cycled to from Auto Track or Point Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & Constantly updated \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - WAYPOINT SLAVED}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			& & \textbf{\textbullet} \ HSI: Desired waypoint selected \\
-			& & \textbf{\textbullet} \ HSI: WYPT boxed on \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & HSI: press WPSDG to designate waypoint as target and slave TGP \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew} & TDC slew to adjust TGP \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		& & \textbf{\textbullet} \ HSI: Desired waypoint selected \\
+		& & \textbf{\textbullet} \ HSI: WYPT boxed on \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & HSI: press WPSDG to designate waypoint as target and slave TGP \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew} & TDC slew to adjust TGP \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - AREA TRACK}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
-			& & 2. SCS towards FLIR page to toggle ATRK/PTRK \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew} & Not possibe in Area Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
+		& & 2. SCS towards FLIR page to toggle ATRK/PTRK \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew} & Not possibe in Area Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - POINT TRACK}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
-			& & 2. SCS towards FLIR page to toggle ATRK/PTRK \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew} & Not possibe in Point Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
+		& & 2. SCS towards FLIR page to toggle ATRK/PTRK \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew} & Not possibe in Point Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - TGP OFFSET}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ In ATRK/PTRK \\
-			\midrule
-			\textbf{\textbullet} & \blue{OFFSET} & TDC DEPRESS to activate OFFSET \\
-			& & \textbf{\textbullet} \ + cross (Offset Cursor) appears \\
-			& & \textbf{\textbullet} \ Slew with TDC \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS again to designate Offset Cursor as new Target \\
-			\midrule
-			\textbf{\textbullet} & \blue{FLIR to Cursor} & SCS in direction of FLIR page to snap TGP to location of Offset Cursor (while in PTRK) \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ In ATRK/PTRK \\
+		\midrule
+		\textbf{\textbullet} & \blue{OFFSET} & TDC DEPRESS to activate OFFSET \\
+		& & \textbf{\textbullet} \ + cross (Offset Cursor) appears \\
+		& & \textbf{\textbullet} \ Slew with TDC \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS again to designate Offset Cursor as new Target \\
+		\midrule
+		\textbf{\textbullet} & \blue{FLIR to Cursor} & SCS in direction of FLIR page to snap TGP to location of Offset Cursor (while in PTRK) \\
+	\end{listlongtable}
 
 	\subsection{START-UP \& LASING}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			1. & \blue{Start-Up} & a) \ FLIR Switch: STBY \\
-			& & b) \ Open FLIR page, monitor warm-up \\
-			& & c) \ FLIR Switch: ON when STBY displayed \\
-			& & d) \ Confirm mode displays OPR \\
-			\midrule
-			2. & \blue{Unstow} & a) \ Select VVSLV \\
-			& & b) \ Unselect VVSLV to enter Snowplow \\
-			\midrule
-			3. & \blue{DDI} & Contrast \& Brightness as required \\
-			\midrule
-			4. & \blue{LTD/R} & a) \ ARM \\
-			& & b) \ Confirm L ARM indication \\
-			\midrule
-			5. & \blue{TDC} & Slew to Target \\
-			\midrule
-			6. & \blue{Zoom} & as required (WIDE/NAR) \\
-			\midrule
-			7. & \blue{Camera Mode} & as required (CCD/FLIR) \\
-			\midrule
-			8. & \blue{Pointing Method} & as required \\
-			\midrule
-			9. & \blue{Laser Code} & a) \ Press UFC OSB \\
-			& & b) \ Press LTDC, enter desired code \\
-			& & c) \ Press ENT \\
-			\midrule
-			10. & \blue{Designate Target} & TDC DEPRESS (will slave A/G weapons to TGP) \\
-			\midrule
-			11. & \blue{Lasing} & \textbf{\textbullet} \ TRIG boxed: press \& hold trigger to lase \\
-			& & \textbf{\textbullet} \ TRIG unboxed: AUTO lasing \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		1. & \blue{Start-Up} & a) \ FLIR Switch: STBY \\
+		& & b) \ Open FLIR page, monitor warm-up \\
+		& & c) \ FLIR Switch: ON when STBY displayed \\
+		& & d) \ Confirm mode displays OPR \\
+		\midrule
+		2. & \blue{Unstow} & a) \ Select VVSLV \\
+		& & b) \ Unselect VVSLV to enter Snowplow \\
+		\midrule
+		3. & \blue{DDI} & Contrast \& Brightness as required \\
+		\midrule
+		4. & \blue{LTD/R} & a) \ ARM \\
+		& & b) \ Confirm L ARM indication \\
+		\midrule
+		5. & \blue{TDC} & Slew to Target \\
+		\midrule
+		6. & \blue{Zoom} & as required (WIDE/NAR) \\
+		\midrule
+		7. & \blue{Camera Mode} & as required (CCD/FLIR) \\
+		\midrule
+		8. & \blue{Pointing Method} & as required \\
+		\midrule
+		9. & \blue{Laser Code} & a) \ Press UFC OSB \\
+		& & b) \ Press LTDC, enter desired code \\
+		& & c) \ Press ENT \\
+		\midrule
+		10. & \blue{Designate Target} & TDC DEPRESS (will slave A/G weapons to TGP) \\
+		\midrule
+		11. & \blue{Lasing} & \textbf{\textbullet} \ TRIG boxed: press \& hold trigger to lase \\
+		& & \textbf{\textbullet} \ TRIG unboxed: AUTO lasing \\
+	\end{listlongtable}
 
 	\subsection{LASER SPOT TRACKER (LST)}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ TGP: ON \\
-			& & \textbf{\textbullet} \ LST/NFLR: ON \\
-			\midrule
-			\textbf{\textbullet} & \blue{Set Laser Code} & 1. \ UFC OSB on FLIR page \\
-			& & 2. \ Press LSTC, enter Code on Keypad, ENT \\
-			\midrule
-			\textbf{\textbullet} & \blue{Begin Search} & 1. \ Set TGP to Snowplow, slew to vicinity of laser \\
-			& & 2. \ Press LST OSB on FLIR page, or press CAGE/UNCAGE \\
-			\midrule
-			\textbf{\textbullet} & \blue{Searching} & \textbf{\textbullet} \ FLIR image blank \\
-			& & \textbf{\textbullet} \ LST flashes on FLIR page \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ TGP: ON \\
+		& & \textbf{\textbullet} \ LST/NFLR: ON \\
+		\midrule
+		\textbf{\textbullet} & \blue{Set Laser Code} & 1. \ UFC OSB on FLIR page \\
+		& & 2. \ Press LSTC, enter Code on Keypad, ENT \\
+		\midrule
+		\textbf{\textbullet} & \blue{Begin Search} & 1. \ Set TGP to Snowplow, slew to vicinity of laser \\
+		& & 2. \ Press LST OSB on FLIR page, or press CAGE/UNCAGE \\
+		\midrule
+		\textbf{\textbullet} & \blue{Searching} & \textbf{\textbullet} \ FLIR image blank \\
+		& & \textbf{\textbullet} \ LST flashes on FLIR page \\
+	\end{listlongtable}
 
 	\subsection{LASER MARKING}
 	\blue{Note} CANNOT be used for weapons guidance, only visible in NVG
@@ -2022,178 +1780,142 @@
 	\section{ASQ-228 ATFLIR}
 
 	\subsection{CONTROLS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Display Selection} & SCS: towards Targeting pod display \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle SCENE/AUTO} & SCS: towards Selected Display \\
-			\midrule
-			\textbf{\textbullet} & \blue{Zoom} & \textbf{\textbullet} \ Radar Elevation Control \\
-			& & \textbf{\textbullet} \ Zoom OSBs \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle} & \textbf{\textbullet} \ RAID/FLIR Button short \\
-			& \blue{WFOV/MFOV/NAR}& \textbf{\textbullet} \ FOV OSB \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle CCD/FLIR} & \textbf{\textbullet} \ RAID/FLIR Button long \\
-			& & \textbf{\textbullet} \ FLIR/CCD OSB\\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew Reticle} & TDC Slew \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designate} & TDC DEPRESS \\
-			\midrule
-			\textbf{\textbullet} & \blue{Undesignate} & NWS/UNDESIGNATE Button \\
-			\midrule
-			\textbf{\textbullet} & \blue{Lase} & TRIGGER if TRIG mode boxed \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Display Selection} & SCS: towards Targeting pod display \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle SCENE/AUTO} & SCS: towards Selected Display \\
+		\midrule
+		\textbf{\textbullet} & \blue{Zoom} & \textbf{\textbullet} \ Radar Elevation Control \\
+		& & \textbf{\textbullet} \ Zoom OSBs \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle} & \textbf{\textbullet} \ RAID/FLIR Button short \\
+		& \blue{WFOV/MFOV/NAR}& \textbf{\textbullet} \ FOV OSB \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle CCD/FLIR} & \textbf{\textbullet} \ RAID/FLIR Button long \\
+		& & \textbf{\textbullet} \ FLIR/CCD OSB\\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew Reticle} & TDC Slew \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designate} & TDC DEPRESS \\
+		\midrule
+		\textbf{\textbullet} & \blue{Undesignate} & NWS/UNDESIGNATE Button \\
+		\midrule
+		\textbf{\textbullet} & \blue{Lase} & TRIGGER if TRIG mode boxed \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
-			\midrule
-			\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
-			\midrule
-			\textbf{\textbullet} & \blue{Stabilized Pointing} & Entered when target designated from Snowplow or cycled from Auto Track / Point Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Waypoint Slaving} & Available using HSI (TGP snaps to WYPT) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Scene Track} & Tracks specific area. Best for fixed targets \\
-			\midrule
-			\textbf{\textbullet} & \blue{Auto Track} & Tracks specific Point. Best for moving targets \\
-			\midrule
-			\textbf{\textbullet} & \blue{INR / Stabilized Pointing} & Active when TGP is slewed, maintains orientation to AC using inertial data \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
+		\midrule
+		\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
+		\midrule
+		\textbf{\textbullet} & \blue{Stabilized Pointing} & Entered when target designated from Snowplow or cycled from Auto Track / Point Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Waypoint Slaving} & Available using HSI (TGP snaps to WYPT) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Scene Track} & Tracks specific area. Best for fixed targets \\
+		\midrule
+		\textbf{\textbullet} & \blue{Auto Track} & Tracks specific Point. Best for moving targets \\
+		\midrule
+		\textbf{\textbullet} & \blue{INR / Stabilized Pointing} & Active when TGP is slewed, maintains orientation to AC using inertial data \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - VVSLV}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Press UNDESIGNATE twice \\
-			& & \textbf{\textbullet} \ or press VVSLV OSB on FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{RTCL} & Box RTCL OSB to display TGP reticle \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{VVSLV} & FLIR slaved to line of sight of velocity vector \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & \textbf{\textbullet} \ Press UNDESIGNATE twice \\
+		& & \textbf{\textbullet} \ or press VVSLV OSB on FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{RTCL} & Box RTCL OSB to display TGP reticle \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - SNOWPLOW}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
-			& & \textbf{\textbullet} \ 0 deg left/right \\
-			& & \textbf{\textbullet} \ -8 deg down \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Press UNDESIGNATE twice to select VVSLV \& unstow TGP \\
-			& & 2. \ Press UNDESIGNATE twice to deselect VVSLV \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Snowplow} & Default mode when no Target designated \\
+		& & \textbf{\textbullet} \ 0 deg left/right \\
+		& & \textbf{\textbullet} \ -8 deg down \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Press UNDESIGNATE twice to select VVSLV \& unstow TGP \\
+		& & 2. \ Press UNDESIGNATE twice to deselect VVSLV \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - WAYPOINT SLAVED}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			& & \textbf{\textbullet} \ HSI: Desired waypoint selected \\
-			& & \textbf{\textbullet} \ HSI: WYPT boxed on \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & HSI: press WPSDG to designate waypoint as target and slave TGP \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew} & TDC slew to adjust TGP \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		& & \textbf{\textbullet} \ HSI: Desired waypoint selected \\
+		& & \textbf{\textbullet} \ HSI: WYPT boxed on \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & HSI: press WPSDG to designate waypoint as target and slave TGP \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew} & TDC slew to adjust TGP \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - SCENE TRACK}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
-			& & 2. SCS towards FLIR page to toggle SCENE/AUTO \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew} & Scene Track reticle still slewable with TDC \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & Automatic in SCENE Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
+		& & 2. SCS towards FLIR page to toggle SCENE/AUTO \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew} & Scene Track reticle still slewable with TDC \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & Automatic in SCENE Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - AUTO TRACK}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
-			& & 2. SCS towards FLIR page to toggle SCENE/AUTO \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew} & Not possibe in Auto Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & Automatic in AUTO Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ TDC slaved to current FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & 1. \ Unstow TGP with VVSLV \\
+		& & 2. SCS towards FLIR page to toggle SCENE/AUTO \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew} & Not possibe in Auto Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & Automatic in AUTO Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivation} & Press UNDESIGNATE to revert to Snowplow \\
+	\end{listlongtable}
 
 	\subsection{POINTING METHODS - TGP OFFSET}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ AUTO Track \\
-			\midrule
-			\textbf{\textbullet} & \blue{OFFSET} & TDC DEPRESS to activate OFFSET \\
-			& & \textbf{\textbullet} \ + cross (Offset Cursor) appears \\
-			& & \textbf{\textbullet} \ Slew with TDC \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & SCS towards FLIR to designate Offset Cursor \\
-			\midrule
-			\textbf{\textbullet} & \blue{FLIR to Cursor} & SCS in direction of FLIR page to snap TGP to location of Offset Cursor (while in PTRK) \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ AUTO Track \\
+		\midrule
+		\textbf{\textbullet} & \blue{OFFSET} & TDC DEPRESS to activate OFFSET \\
+		& & \textbf{\textbullet} \ + cross (Offset Cursor) appears \\
+		& & \textbf{\textbullet} \ Slew with TDC \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & SCS towards FLIR to designate Offset Cursor \\
+		\midrule
+		\textbf{\textbullet} & \blue{FLIR to Cursor} & SCS in direction of FLIR page to snap TGP to location of Offset Cursor (while in PTRK) \\
+	\end{listlongtable}
 
 	\subsection{LASER SPOT TRACKER (LST)}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ TGP: ON \\
-			& & \textbf{\textbullet} \ LST/NFLR: ON \\
-			\midrule
-			\textbf{\textbullet} & \blue{Set Laser Code} & 1. \ UFC OSB on FLIR page \\
-			& & 2. \ Press LSTC, enter Code on Keypad, ENT \\
-			\midrule
-			\textbf{\textbullet} & \blue{Begin Search} & 1. \ Set TGP to Snowplow, slew to vicinity of laser \\
-			& & 2. \ Press LST OSB on FLIR page \\
-			\midrule
-			\textbf{\textbullet} & \blue{Searching} & \textbf{\textbullet} \ FLIR image blank \\
-			& & \textbf{\textbullet} \ LST flashes on FLIR page \\
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ TGP: ON \\
+		& & \textbf{\textbullet} \ LST/NFLR: ON \\
+		\midrule
+		\textbf{\textbullet} & \blue{Set Laser Code} & 1. \ UFC OSB on FLIR page \\
+		& & 2. \ Press LSTC, enter Code on Keypad, ENT \\
+		\midrule
+		\textbf{\textbullet} & \blue{Begin Search} & 1. \ Set TGP to Snowplow, slew to vicinity of laser \\
+		& & 2. \ Press LST OSB on FLIR page \\
+		\midrule
+		\textbf{\textbullet} & \blue{Searching} & \textbf{\textbullet} \ FLIR image blank \\
+		& & \textbf{\textbullet} \ LST flashes on FLIR page \\
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+	\end{listlongtable}
 
 	\subsection{A/A OPERATION MODES}
 	\subsection{A/A AUTO TRACK}
@@ -2203,32 +1925,28 @@
 	\section{JHMCS}
 
 	\subsection{CONTROLS}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{HMD Brightness} & BRT \\
-			& & Powers on JHMCS \\
-			\midrule
-			\textbf{\textbullet} & \blue{Master Mode} & A/A \& A/G Master Mode buttons \\
-			& & symbology changes depending on selected mode \\
-			\midrule
-			\textbf{\textbullet} & \blue{HMD Blanking Toggle} & Even Marker ``Recce" Button \\
-			& & Toggles manual blanking \\
-			\midrule
-			\textbf{\textbullet} & \blue{LHACQ Activation} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ SCS: FWD long (>0.8s) \\
-			\midrule
-			\textbf{\textbullet} & \blue{HACQ Activation} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ SCS: FWD short  (<0.8s) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Toggle Selected Sensor} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ SCS: FWD \\
-			& & Toggles between HUD and HMD \\
-			\midrule
-			\textbf{\textbullet} & \blue{Undesignate} & UNDESIGNATE \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{HMD Brightness} & BRT \\
+		& & Powers on JHMCS \\
+		\midrule
+		\textbf{\textbullet} & \blue{Master Mode} & A/A \& A/G Master Mode buttons \\
+		& & symbology changes depending on selected mode \\
+		\midrule
+		\textbf{\textbullet} & \blue{HMD Blanking Toggle} & Even Marker ``Recce" Button \\
+		& & Toggles manual blanking \\
+		\midrule
+		\textbf{\textbullet} & \blue{LHACQ Activation} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ SCS: FWD long (>0.8s) \\
+		\midrule
+		\textbf{\textbullet} & \blue{HACQ Activation} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ SCS: FWD short  (<0.8s) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Toggle Selected Sensor} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ SCS: FWD \\
+		& & Toggles between HUD and HMD \\
+		\midrule
+		\textbf{\textbullet} & \blue{Undesignate} & UNDESIGNATE \\
+	\end{listlongtable}
 
 	\subsection{SYMBOLOGY}
 
@@ -2241,62 +1959,50 @@
 	\subsection{SETUP - MIDS}
 
 	\subsection{TARGET DESIGNATION - A/G}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
-			& & \textbf{\textbullet} \ JHMCS: ON \\
-			& & \textbf{\textbullet} \ TDC slaved to HUD or HMD \\
-			\midrule
-			\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ HUD: dot in VV indicates HUD slaved \\
-			& & \textbf{\textbullet} \ HMD: Aiming Reticle indicates HMD slaved \\
-			\midrule
-			\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
-			\midrule
-			\textbf{\textbullet} & \blue{Slew Diamond} & TDC slew \\
-			\midrule
-			\textbf{\textbullet} & \blue{Undesignate} & UNDESIGNATE \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/G \\
+		& & \textbf{\textbullet} \ JHMCS: ON \\
+		& & \textbf{\textbullet} \ TDC slaved to HUD or HMD \\
+		\midrule
+		\textbf{\textbullet} & \blue{Symbology} & \textbf{\textbullet} \ HUD: dot in VV indicates HUD slaved \\
+		& & \textbf{\textbullet} \ HMD: Aiming Reticle indicates HMD slaved \\
+		\midrule
+		\textbf{\textbullet} & \blue{Designation} & TDC DEPRESS \\
+		\midrule
+		\textbf{\textbullet} & \blue{Slew Diamond} & TDC slew \\
+		\midrule
+		\textbf{\textbullet} & \blue{Undesignate} & UNDESIGNATE \\
+	\end{listlongtable}
 
 	\subsection{TARGET DESIGNATION - A/A Radar}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{LHACQ} & Long Range Helmet Acquisition: 40nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{HACQ} & Helmet Acquisition: 10nm \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: BRT \\
-			\midrule
-			\textbf{\textbullet} & \blue{LHACQ Activation} & SCS: FWD long (>0.8s) \\
-			\midrule
-			\textbf{\textbullet} & \blue{HACQ Activation} & SCS: FWD short (<0.8s) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Deactivate} & SCS AFT \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{LHACQ} & Long Range Helmet Acquisition: 40nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{HACQ} & Helmet Acquisition: 10nm \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: BRT \\
+		\midrule
+		\textbf{\textbullet} & \blue{LHACQ Activation} & SCS: FWD long (>0.8s) \\
+		\midrule
+		\textbf{\textbullet} & \blue{HACQ Activation} & SCS: FWD short (<0.8s) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Deactivate} & SCS AFT \\
+	\end{listlongtable}
 
 	\subsection{AIM-9X - UP-LOOK}
-	\begin{center}
-		\begin{longtable}{l p{3cm} | p{8cm}}
-			\toprule
-			\textbf{\textbullet} & \blue{Up-Look} & Slaves AIM-9X to Up-Look reticle \\
-			& & (significantly above HMD Line of Sight) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
-			& & \textbf{\textbullet} \ HMD: BRT \\
-			& & \textbf{\textbullet} \ AIM-9X: Selected \\
-			\midrule
-			\textbf{\textbullet} & \blue{Activation} & SCS: FWD (slave TDC to HMD) \\
-			\midrule
-			\textbf{\textbullet} & \blue{Uncage} & CAGE/UNCAGE button \\
-			\bottomrule
-		\end{longtable}
-	\end{center}
+	\begin{listlongtable}
+		\textbf{\textbullet} & \blue{Up-Look} & Slaves AIM-9X to Up-Look reticle \\
+		& & (significantly above HMD Line of Sight) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Conditions} & \textbf{\textbullet} \ Master Mode: A/A \\
+		& & \textbf{\textbullet} \ HMD: BRT \\
+		& & \textbf{\textbullet} \ AIM-9X: Selected \\
+		\midrule
+		\textbf{\textbullet} & \blue{Activation} & SCS: FWD (slave TDC to HMD) \\
+		\midrule
+		\textbf{\textbullet} & \blue{Uncage} & CAGE/UNCAGE button \\
+	\end{listlongtable}
 
 	%\newpage
 	\cleardoublepage
