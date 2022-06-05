@@ -2,6 +2,25 @@
 
 ## CHANGELOG
 
+### Changelog - 2022.06.05
+
+- `TechCheck.cls`
+  - Updated to latest version (see F-14 Cheatsheet for details)
+
+- `F18_Cheatsheet.tex`
+  - Partially (mostly) updated to use new `tablenumitem` environments
+
+### Changelog - 2022.06.02
+
+- `F18_Cheatsheet.tex`
+  - Tested alternate weapons checklists in `SLAM` section
+
+### Changelog - 2022.05.30
+
+- `F18_Cheatsheet.tex`
+  - Began reworking A/G section
+    - updated `SLAM` to tabular rather than enumerate
+
 ### Changelog - 2022.05.29
 
 - `TechCheck.cls`

@@ -581,34 +581,294 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-----------------------------------------------------------------
-% CUSTOM ENVIRONMENTS
+% LOW LEVEL CUSTOM ENUMITEM ENVIRONMENTS
 %-----------------------------------------------------------------
 
-\newenvironment{listtabular}{
-	% begdef
+\newenvironment{innerchecklistenumerate}[1][]{% begdef
+	\begin{enumerate}[itemsep=4pt, #1]
+}{% enddef
+	\end{enumerate}
+}
+
+\newenvironment{innerchecklistitemize}[1][]{% begdef
+	\begin{itemize}[#1]
+}{% enddef
+	\end{itemize}
+}
+
+\newenvironment{outerchecklistenumerate}{% begdef
+	\begin{enumerate}[leftmargin=0.1\textwidth, rightmargin=0.1\textwidth, itemsep=4pt, label=\textbf{\arabic*.}]
+}{% begdef
+	\end{enumerate}
+}
+
+\newenvironment{outerchecklistitemize}{% begdef
+	\begin{itemize}[leftmargin=0.1\textwidth, rightmargin=0.1\textwidth, itemsep=4pt, label=\textbf{\textbullet}]
+}{% begdef
+	\end{itemize}
+}
+
+
+%-----------------------------------------------------------------
+% CUSTOM MINIPAGE ENVIRONMENTS
+%-----------------------------------------------------------------
+\newenvironment{tableminipage}{% begdef
+	\begin{minipage}[t]{\linewidth}
+	\vspace{-7pt}
+}{% enddef
+	\end{minipage}
+}
+
+%-----------------------------------------------------------------
+% CUSTOM TABLE ENVIRONMENTS
+%-----------------------------------------------------------------
+\newenvironment{listtable}{% begdef
+	\newenvironment{subenumerate}[1][]{% begdef
+		\begin{tableminipage}
+			\begin{enumerate}[##1]
+	}{% enddef
+			\end{enumerate}
+		\end{tableminipage}
+	}
+
+	\newenvironment{subitemize}[1][]{% begdef
+		\begin{tableminipage}
+			\begin{itemize}[##1]
+	}{% enddef
+			\end{itemize}
+		\end{tableminipage}
+	}
 	\begin{center}
 		\begin{tabular}{l p{3cm} | p{8cm}}
 			\toprule
-}{
-	% enddef
+}{% enddef
 			\bottomrule
 		\end{tabular}
 	\end{center}
 }
 
-\newenvironment{listlongtable}{
-	% begdef
+\newenvironment{listlongtable}{% begdef
+	\newenvironment{subenumerate}[1][]{% begdef
+		\begin{tableminipage}
+			\begin{enumerate}[##1]
+	}{% enddef
+			\end{enumerate}
+		\end{tableminipage}
+	}
+
+	\newenvironment{subitemize}[1][]{% begdef
+		\begin{tableminipage}
+			\begin{itemize}[##1]
+	}{% enddef
+			\end{itemize}
+		\end{tableminipage}
+	}
 	\begin{center}
 		\begin{longtable}{l p{3cm} | p{8cm}}
 			\toprule
-}{
-	% enddef
+}{% enddef
 			\bottomrule
 		\end{longtable}
 	\end{center}
 }
 
+%-----------------------------------------------------------------
+% TABLE ENVIRONMENTS WITH ENUMITEM-LIKE BEHAVIOR
+%-----------------------------------------------------------------
 
+% Counter for use in tablenumitems
+\newcounter{tablenumi}
+% longtablenumerate -- creates table that behaves like enumerate
+\newenvironment{longtablenumerate}{% begdef
+	\setcounter{tablenumi}{1} 
+	% Define command equiv to `item`
+	% arg 1 - typeset in blue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\blueitem}[2]{
+		% Create midrule unless first row
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\arabic{tablenumi}. & \blue{##1} & ##2 
+		\stepcounter{tablenumi} \\
+	}
+	% Define command equiv to `item`
+	% arg 1 - typeset in dblue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\dblueitem}[2]{
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\arabic{tablenumi}. & \dblue{##1} & ##2 
+		\stepcounter{tablenumi} \\
+	}
+	% Uses custom longtable style
+	\begin{listlongtable}
+}{% enddef
+	\end{listlongtable}
+}
+
+% longtableitemize -- creates table that behaves like itemize
+\newenvironment{longtableitemize}{% begdef
+	\setcounter{tablenumi}{1}
+	% Define command equiv to `item`
+	% arg 1 - typeset in blue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\blueitem}[2]{
+		% Create midrule unless first row
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\textbf{\textbullet} & \blue{##1} & ##2
+		\stepcounter{tablenumi} \\
+	}
+	% Define command equiv to `item`
+	% arg 1 - typeset in dblue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\dblueitem}[2]{
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\textbf{\textbullet} & \dblue{##1} & ##2
+		\stepcounter{tablenumi} \\
+	}
+	% Uses custom longtable style
+	\begin{listlongtable}
+}{% enddef
+	\end{listlongtable}
+}
+
+% SHORT VERSIONS
+
+% tablenumerate -- creates table that behaves like enumerate
+\newenvironment{tablenumerate}{% begdef
+	\setcounter{tablenumi}{1} 
+	% Define command equiv to `item`
+	% arg 1 - typeset in blue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\blueitem}[2]{
+		% Create midrule unless first row
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\arabic{tablenumi}. & \blue{##1} & ##2 
+		\stepcounter{tablenumi} \\
+	}
+	% Define command equiv to `item`
+	% arg 1 - typeset in dblue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\dblueitem}[2]{
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\arabic{tablenumi}. & \dblue{##1} & ##2 
+		\stepcounter{tablenumi} \\
+	}
+	% Uses custom table style
+	\begin{listtable}
+}{% enddef
+	\end{listtable}
+}
+
+% tableitemize -- creates table that behaves like itemize
+\newenvironment{tableitemize}{% begdef
+	\setcounter{tablenumi}{1}
+	% Define command equiv to `item`
+	% arg 1 - typeset in blue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\blueitem}[2]{
+		% Create midrule unless first row
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\textbf{\textbullet} & \blue{##1} & ##2
+		\stepcounter{tablenumi} \\
+	}
+	% Define command equiv to `item`
+	% arg 1 - typeset in dblue in 2. column
+	% arg 2 - typeset normally in 3. column
+	\newcommand{\dblueitem}[2]{
+		\ifnum\value{tablenumi}>1
+			\midrule
+		\else
+		\fi
+		\textbf{\textbullet} & \dblue{##1} & ##2
+		\stepcounter{tablenumi} \\
+	}
+	% Uses custom table style
+	\begin{listtable}
+}{% enddef
+	\end{listtable}
+}
+
+%-----------------------------------------------------------------
+% HIGH-LEVEL CUSTOM ENUMITEM ENVIRONMENTS
+%-----------------------------------------------------------------
+% SHORT VERSIONS
+\newenvironment{checklistenumerate}{% begdef
+	\newenvironment{subenumerate}[1][]{% begdef
+		\begin{innerchecklistenumerate}[##1]
+	}{% enddef
+		\end{innerchecklistenumerate}
+	}
+	\newenvironment{subitemize}[1][]{% begdef
+		\begin{innerchecklistitemize}[##1]
+	}{% enddef
+		\end{innerchecklistitemize}
+	}
+	\newcommand{\blueitem}[2]{
+		\item \blue{##1} {##2}
+	}
+	\newcommand{\dblueitem}[2]{
+		\item \dblue{##1} {##2}
+	}
+	\begin{outerchecklistenumerate}
+}{% enddef
+	\end{outerchecklistenumerate}
+}
+
+\newenvironment{checklistitemize}{% begdef
+	\newenvironment{subenumerate}[1][]{% begdef
+		\begin{innerchecklistenumerate}[##1]
+	}{% enddef
+		\end{innerchecklistenumerate}
+	}
+	\newenvironment{subitemize}[1][]{% begdef
+		\begin{innerchecklistitemize}[##1]
+	}{% enddef
+		\end{innerchecklistitemize}
+	}
+	\newcommand{\blueitem}[2]{
+		\item \blue{##1} ##2
+	}
+	\newcommand{\dblueitem}[2]{
+		\item \dblue{##1} ##2
+	}
+	\begin{outerchecklistitemize}
+}{% enddef
+	\end{outerchecklistitemize}
+}
+
+% LONG VERSIONS -- No difference to short versions
+% Just to keep track if switching from longtablenumitem
+\newenvironment{longchecklistenumerate}{% begdef
+	\begin{checklistenumerate}
+}{% enddef
+	\end{checklistenumerate}
+}
+
+\newenvironment{longchecklistitemize}{% begdef
+	\begin{checklistitemize}
+}{% enddef
+	\end{checklistitemize}
+}
 
 %-----------------------------------------------------------------
 % CUSTOM COMMANDS
