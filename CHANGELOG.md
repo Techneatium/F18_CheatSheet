@@ -2,6 +2,17 @@
 
 ## CHANGELOG
 
+### Changelog - 2022.06.06
+
+- `TechCheck.cls`
+  - Updated to latest version (see F-14 Cheatsheet for details)
+
+- `F18_Cheatsheet.tex`
+  - Adapted to changes in `TechCheck.cls`
+    - `longtablenumitem` renamed to `tablenumitem`
+  - Continued updating to use new environments
+    - Notably converted remaining `enumitem`s to `checklistenumitem`
+
 ### Changelog - 2022.06.05
 
 - `TechCheck.cls`

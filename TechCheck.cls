@@ -44,6 +44,7 @@
 \RequirePackage{tikzpagenodes} % points for tikz
 \usetikzlibrary{calc} % used for hyperlinked nodes
 \RequirePackage[hidelinks]{hyperref} % used for hyperlinked nodes
+\RequirePackage{cleveref} % better referencing
 \RequirePackage{lipsum} % lorem ipsum
 \RequirePackage[document]{ragged2e} % left ragged text
 \RequirePackage{atbegshi}  % special commands that apply tikz to all pages
@@ -581,35 +582,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-----------------------------------------------------------------
-% LOW LEVEL CUSTOM ENUMITEM ENVIRONMENTS
-%-----------------------------------------------------------------
-
-\newenvironment{innerchecklistenumerate}[1][]{% begdef
-	\begin{enumerate}[itemsep=4pt, #1]
-}{% enddef
-	\end{enumerate}
-}
-
-\newenvironment{innerchecklistitemize}[1][]{% begdef
-	\begin{itemize}[#1]
-}{% enddef
-	\end{itemize}
-}
-
-\newenvironment{outerchecklistenumerate}{% begdef
-	\begin{enumerate}[leftmargin=0.1\textwidth, rightmargin=0.1\textwidth, itemsep=4pt, label=\textbf{\arabic*.}]
-}{% begdef
-	\end{enumerate}
-}
-
-\newenvironment{outerchecklistitemize}{% begdef
-	\begin{itemize}[leftmargin=0.1\textwidth, rightmargin=0.1\textwidth, itemsep=4pt, label=\textbf{\textbullet}]
-}{% begdef
-	\end{itemize}
-}
-
-
-%-----------------------------------------------------------------
 % CUSTOM MINIPAGE ENVIRONMENTS
 %-----------------------------------------------------------------
 \newenvironment{tableminipage}{% begdef
@@ -678,8 +650,8 @@
 
 % Counter for use in tablenumitems
 \newcounter{tablenumi}
-% longtablenumerate -- creates table that behaves like enumerate
-\newenvironment{longtablenumerate}{% begdef
+% tablenumerate -- creates table that behaves like enumerate
+\newenvironment{tablenumerate}{% begdef
 	\setcounter{tablenumi}{1} 
 	% Define command equiv to `item`
 	% arg 1 - typeset in blue in 2. column
@@ -710,8 +682,8 @@
 	\end{listlongtable}
 }
 
-% longtableitemize -- creates table that behaves like itemize
-\newenvironment{longtableitemize}{% begdef
+% tableitemize -- creates table that behaves like itemize
+\newenvironment{tableitemize}{% begdef
 	\setcounter{tablenumi}{1}
 	% Define command equiv to `item`
 	% arg 1 - typeset in blue in 2. column
@@ -744,8 +716,8 @@
 
 % SHORT VERSIONS
 
-% tablenumerate -- creates table that behaves like enumerate
-\newenvironment{tablenumerate}{% begdef
+% shortablenumerate -- creates table that behaves like enumerate
+\newenvironment{shortablenumerate}{% begdef
 	\setcounter{tablenumi}{1} 
 	% Define command equiv to `item`
 	% arg 1 - typeset in blue in 2. column
@@ -776,8 +748,8 @@
 	\end{listtable}
 }
 
-% tableitemize -- creates table that behaves like itemize
-\newenvironment{tableitemize}{% begdef
+% shortableitemize -- creates table that behaves like itemize
+\newenvironment{shortableitemize}{% begdef
 	\setcounter{tablenumi}{1}
 	% Define command equiv to `item`
 	% arg 1 - typeset in blue in 2. column
@@ -806,6 +778,33 @@
 	\begin{listtable}
 }{% enddef
 	\end{listtable}
+}
+
+%-----------------------------------------------------------------
+% LOW LEVEL CUSTOM ENUMITEM ENVIRONMENTS
+%-----------------------------------------------------------------
+\newenvironment{innerchecklistenumerate}[1][]{% begdef
+	\begin{enumerate}[itemsep=4pt, #1]
+}{% enddef
+	\end{enumerate}
+}
+
+\newenvironment{innerchecklistitemize}[1][]{% begdef
+	\begin{itemize}[#1]
+}{% enddef
+	\end{itemize}
+}
+
+\newenvironment{outerchecklistenumerate}{% begdef
+	\begin{enumerate}[leftmargin=0.1\textwidth, rightmargin=0.1\textwidth, itemsep=4pt, label=\textbf{\arabic*.}]
+}{% begdef
+	\end{enumerate}
+}
+
+\newenvironment{outerchecklistitemize}{% begdef
+	\begin{itemize}[leftmargin=0.1\textwidth, rightmargin=0.1\textwidth, itemsep=4pt, label=\textbf{\textbullet}]
+}{% begdef
+	\end{itemize}
 }
 
 %-----------------------------------------------------------------
