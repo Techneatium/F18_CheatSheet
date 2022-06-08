@@ -2,7 +2,7 @@
 
 ## CHANGELOG
 
-### Changelog - 2022.06.06
+### Changelog - 2022.06.08
 
 - `TechCheck.cls`
   - Updated to latest version (see F-14 Cheatsheet for details)

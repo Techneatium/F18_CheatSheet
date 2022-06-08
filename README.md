@@ -45,7 +45,7 @@ For ease of maintenance, only the PDF and source files are available here. To co
 
 - `PROCEDURES`
   - ICLS CASE III
-  - ACLS 
+  - ACLS
   - AAR
 
 - `SYSTEMS`
@@ -75,8 +75,6 @@ For ease of maintenance, only the PDF and source files are available here. To co
 - `GENERAL`
   - General overhaul to match newer styling of F-14 Cheatsheet
   - Move RWR symbology to an Appendix?
-
-
 
 ***
 
