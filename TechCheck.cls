@@ -265,6 +265,13 @@
   \PassOptionsToClass{showframe}{geometry}
 }
 
+% Thumbnar on/off
+\newtoggle{autothumbnar}
+\toggletrue{autothumbnar}
+\DeclareOption{manthumbnar}{
+	\togglefalse{autothumbnar}
+}
+
 %-----------------------------------------------------------------
 % PROCESS OPTIONS
 %-----------------------------------------------------------------
@@ -385,58 +392,6 @@
 }
 
 %-----------------------------------------------------------------
-% HATCHING
-%-----------------------------------------------------------------
-% NOTE -- MUST BE DEFINED BEFORE HEADER/FOOTER
-% creates node option to create hyperref
-\tikzset{
-	hyperref node/.style={
-		alias=sourcenode,
-		append after command={
-			let     \p1 = (sourcenode.north west),
-			\p2=(sourcenode.south east),
-			\n1={\x2-\x1},
-			\n2={\y1-\y2} in
-			node [inner sep=0pt, outer sep=0pt,anchor=north west,at=(\p1)] {\hyperref[#1]{\XeTeXLinkBox{\phantom{\rule{\n1}{\n2}}}}}
-			%xelatex needs \XeTeXLinkBox, won't create a link unless it
-			%finds text --- rules don't work without \XeTeXLinkBox.
-			%Still builds correctly with pdflatex and lualatex
-		}
-	}
-}
-% titlepage chevron indentation
-
-% individual parallelogram
-\newcommand{\single}[1]{
-	\fill[color1]
-	([xshift=#1*2*5mm,yshift=2mm]current page text area.north west) --
-	([xshift=#1*2*5mm+20mm,yshift=20mm+2mm]current page text area.north west) --
-	([xshift=#1*2*5mm+25mm,yshift=20mm+2mm]current page text area.north west) --
-	([xshift=#1*2*5mm+5mm,yshift=2mm]current page text area.north west) --
-	cycle;
-}
-% while loop to make many parallelograms
-\newcommand\Hatch{
-	\begin{tikzpicture}[remember picture,overlay]
-	\newcount\foo
-	\foo=-3
-	\loop
-	\single{\the\foo}
-	\advance \foo +1
-	\ifnum \foo<21
-	\repeat
-	% makes hatched area hyperlink to front page
-	\node[
-		rectangle,
-		hyperref node=frontpage,
-		anchor=north,
-		minimum width=\paperwidth,
-		minimum height=10mm
-	]()at ([yshift=\paperheight/2]current page.center) {};
-	\end{tikzpicture}
-}
-
-%-----------------------------------------------------------------
 % HEADER/FOOT FORMATTING
 %-----------------------------------------------------------------
 % remove header and foot
@@ -447,26 +402,40 @@
 	% code formatting section titles in header
 	\textcolor{white}{\Large\textbf{#1}}
 }}{}}
+\fancypagestyle{superempty}{
+	% clear defaults
+	\fancyhf{}
+	\fancyhead[LE,LO]{
+		\iftoggle{hatch}{
+		\Hatch
+		}{}
+	}
+}
 \fancypagestyle{empty}{
 	% clear defaults
 	\fancyhf{}
 	\fancyhead[LE,LO]{
-    \iftoggle{hatch}{
-      \Hatch
-    }{}
-  }
+		\iftoggle{hatch}{
+		\Hatch
+		}{}
+	}
+	\fancyhead[RO]{
+		\iftoggle{autothumbnar}{
+			\thumbnar
+		}{}
+	}
 }
 \fancypagestyle{plain}{
 	% clear defaults
 	\fancyhf{}
 	% page number in footer
 	% \fancyfoot[C]{{\tightfont \textbf{--- \thepage \ ---}}}% LE,RO
-	\fancyfoot[C]{{\tightfont \textbf{\thepage}}}% LE,RO
+	\fancyfoot[C]{{\tightfont\textbf{\thepage}}}% LE,RO
 	\fancyhead[LE,LO]{
-    \iftoggle{hatch}{
-      \Hatch
-    }{}
-  }
+		\iftoggle{hatch}{
+			\Hatch
+		}{}
+	}
 }
 \fancypagestyle{body}{
 	% clear defaults
@@ -476,18 +445,23 @@
 	\fancyfoot[C]{{\tightfont \textbf{\thepage}}}% LE,RO
 	% date in top right
 	\fancyhead[RE,RO]{\colorbox{color1}{
-			\textcolor{white}{\titlefont\Large\textbf{REV: \today}}
+		\textcolor{white}{\titlefont\Large\textbf{REV: \today}}
 	}}
 	% extra thing in middle
 	\fancyhead[C]{\colorbox{color1}{
-			\textcolor{white}{\titlefont\Large\textbf{\aircraftshort}}
+		\textcolor{white}{\titlefont\Large\textbf{\aircraftshort}}
 	}}
 	\fancyhead[LE,LO]{
-    \iftoggle{hatch}{
-      \Hatch
-    }{}
-    \titlefont\textbf{\leftmark}
-  }
+		\iftoggle{hatch}{
+			\Hatch
+		}{}
+		\titlefont\textbf{\leftmark}
+  	}
+	\fancyhead[RO]{
+		\iftoggle{autothumbnar}{
+			\thumbnar
+		}{}
+	}
 	\renewcommand{\headrulewidth}{0pt} % and the line
 }
 \pagestyle{body}
@@ -935,6 +909,57 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TIKZPICTURE COMMANDS 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------
+% HATCHING
+%-----------------------------------------------------------------
+% creates node option to create hyperref
+\tikzset{
+	hyperref node/.style={
+		alias=sourcenode,
+		append after command={
+			let     \p1 = (sourcenode.north west),
+			\p2=(sourcenode.south east),
+			\n1={\x2-\x1},
+			\n2={\y1-\y2} in
+			node [inner sep=0pt, outer sep=0pt,anchor=north west,at=(\p1)] {\hyperref[#1]{\XeTeXLinkBox{\phantom{\rule{\n1}{\n2}}}}}
+			%xelatex needs \XeTeXLinkBox, won't create a link unless it
+			%finds text --- rules don't work without \XeTeXLinkBox.
+			%Still builds correctly with pdflatex and lualatex
+		}
+	}
+}
+% titlepage chevron indentation
+
+% individual parallelogram
+\newcommand{\single}[1]{
+	\fill[color1]
+	([xshift=#1*2*5mm,yshift=2mm]current page text area.north west) --
+	([xshift=#1*2*5mm+20mm,yshift=20mm+2mm]current page text area.north west) --
+	([xshift=#1*2*5mm+25mm,yshift=20mm+2mm]current page text area.north west) --
+	([xshift=#1*2*5mm+5mm,yshift=2mm]current page text area.north west) --
+	cycle;
+}
+% while loop to make many parallelograms
+\newcommand\Hatch{
+	\begin{tikzpicture}[remember picture,overlay]
+	\newcount\foo
+	\foo=-3
+	\loop
+	\single{\the\foo}
+	\advance \foo +1
+	\ifnum \foo<21
+	\repeat
+	% makes hatched area hyperlink to front page
+	\node[
+		rectangle,
+		hyperref node=frontpage,
+		anchor=north,
+		minimum width=\paperwidth,
+		minimum height=10mm
+	]()at ([yshift=\paperheight/2]current page.center) {};
+	\end{tikzpicture}
+}
 
 %-----------------------------------------------------------------
 % ROUNDING
