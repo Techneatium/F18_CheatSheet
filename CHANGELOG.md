@@ -2,6 +2,14 @@
 
 ## CHANGELOG
 
+### Changelog - 2022.06.20
+
+- `TechCheck.cls`
+  - Updated to latest version (see F-14 Cheatsheet for details)
+
+- `F18_Cheatsheet.tex`
+  - Adapted to changes in `TechCheck.cls`
+
 ### Changelog - 2022.06.08
 
 - `TechCheck.cls`
