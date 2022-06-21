@@ -5,7 +5,7 @@
 ### Changelog - 2022.06.21
 
 - `TechCheck.cls`
-  - Updated to latest version (see F-14 Cheatsheet for details)
+  - Updated to latest version. [See F-14 Cheatsheet for more details](https://github.com/Techneatium/F14_CheatSheet/blob/master/CHANGELOG.md).
 
 - `F18_Cheatsheet.tex`
   - Adapted to changes in `TechCheck.cls`
@@ -13,7 +13,7 @@
 ### Changelog - 2022.06.08
 
 - `TechCheck.cls`
-  - Updated to latest version (see F-14 Cheatsheet for details)
+  - Updated to latest version. [See F-14 Cheatsheet for more details](https://github.com/Techneatium/F14_CheatSheet/blob/master/CHANGELOG.md).
 
 - `F18_Cheatsheet.tex`
   - Adapted to changes in `TechCheck.cls`
@@ -22,7 +22,7 @@
 ### Changelog - 2022.06.06
 
 - `TechCheck.cls`
-  - Updated to latest version (see F-14 Cheatsheet for details)
+  - Updated to latest version. [See F-14 Cheatsheet for more details](https://github.com/Techneatium/F14_CheatSheet/blob/master/CHANGELOG.md).
 
 - `F18_Cheatsheet.tex`
   - Adapted to changes in `TechCheck.cls`
@@ -33,7 +33,7 @@
 ### Changelog - 2022.06.05
 
 - `TechCheck.cls`
-  - Updated to latest version (see F-14 Cheatsheet for details)
+  - Updated to latest version. [See F-14 Cheatsheet for more details](https://github.com/Techneatium/F14_CheatSheet/blob/master/CHANGELOG.md).
 
 - `F18_Cheatsheet.tex`
   - Partially (mostly) updated to use new `tablenumitem` environments
@@ -52,7 +52,7 @@
 ### Changelog - 2022.05.29
 
 - `TechCheck.cls`
-  - Updated to latest version (see F-14 Cheatsheet for details)
+  - Updated to latest version. [See F-14 Cheatsheet for more details](https://github.com/Techneatium/F14_CheatSheet/blob/master/CHANGELOG.md).
   
 - `F18_Cheatsheet.tex`
   - Updated to use new environments
